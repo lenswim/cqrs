@@ -1,0 +1,35 @@
+networks:
+  local-network:
+    driver: bridge
+
+services:
+  mongo:
+    image: mongo:8.2.1
+    ports:
+      - "27017:27017"
+    networks:
+      - local-network
+
+  backend:
+    build: cqrs-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      SERVER_PORT: 8080
+      MONGO_HOST: mongo
+      MONGO_PORT: 27017
+      MONGO_DB: local
+    networks:
+      - local-network
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./cqrs-frontend
+    ports:
+      - "4173:4173"
+    networks:
+      - local-network
+    depends_on:
+      - backend

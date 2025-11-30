@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "import:2013": "node migration/import-conversations.js 2013",
+    "import:2015": "node migration/import-conversations.js 2015"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.9.6"
+  }
+}
