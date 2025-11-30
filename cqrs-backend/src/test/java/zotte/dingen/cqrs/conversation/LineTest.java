@@ -2,9 +2,10 @@ package zotte.dingen.cqrs.conversation;
 
 import org.junit.Test;
 
-import static be.swsb.cqrs.conversation.LineTestBuilder.aContextLine;
-import static be.swsb.cqrs.conversation.LineTestBuilder.aSpeechLine;
+
 import static org.assertj.core.api.Assertions.assertThat;
+import static zotte.dingen.cqrs.conversation.LineTestBuilder.aContextLine;
+import static zotte.dingen.cqrs.conversation.LineTestBuilder.aSpeechLine;
 
 public class LineTest {
 
