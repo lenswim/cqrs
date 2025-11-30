@@ -2,7 +2,7 @@
 FROM gradle:8.10.2-jdk21-alpine AS builder
 WORKDIR /app
 COPY . .
-RUN gradle build --no-daemon
+RUN gradle clean bootJar --no-daemon
 
 # ---- Stage 2: Runtime ----
 FROM eclipse-temurin:21-jdk-alpine
