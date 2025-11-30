@@ -8,16 +8,19 @@ export function useConversationList() {
 
   useEffect(() => {
 
-      fetch("http://localhost:8080/conversations")
+
+      const API_BASE_URL = import.meta.env.REACT_APP_API_URL;
+
+      fetch(`${API_BASE_URL}/conversations`)
           .then(response => response.json())
           .then(data => setConversations(data))
           .catch(error => {
-              console.error("failed to fetch conversations: ", error);
-          })
+              console.error("Failed to fetch conversations:", error);
+          });
 
 
 
-    // Stubbed response instead of fetch - would be replaced with actual API call
+      // Stubbed response instead of fetch - would be replaced with actual API call
     // setConversations([
     //   {
     //     id: "1",
