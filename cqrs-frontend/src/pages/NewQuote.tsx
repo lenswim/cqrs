@@ -1,12 +1,27 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useToast } from "@chakra-ui/react";
 import { useTheme } from '../contexts/ThemeContext';
 import { lightTheme, darkTheme, transitions, stylePresets } from '../styles/theme';
 import { ConversationDateField, LineEditor } from '../components/conversation';
 import { useConversationForm } from '../hooks';
+import { useNavigate } from "react-router-dom";
 
 export default function NewQuote() {
     const { mode } = useTheme();
     const theme = mode === 'light' ? lightTheme : darkTheme;
+    const toast = useToast();
+    const navigate = useNavigate();
+
+    const handleSuccess = () => {
+        toast({
+            title: "Quote added!",
+            description: "Your conversation was saved.",
+            status: "success",
+            duration: 3000,
+            isClosable: true,
+        });
+        setTimeout(() => navigate("/listQuotes"), 1000);
+    }
+    
     const {
         conversationDate,
         setConversationDate,
@@ -14,7 +29,7 @@ export default function NewQuote() {
         handleLineChange,
         addLine,
         handleSubmit,
-    } = useConversationForm();
+    } = useConversationForm(handleSuccess);
 
     return (
         <Box {...stylePresets.pageContainer}>

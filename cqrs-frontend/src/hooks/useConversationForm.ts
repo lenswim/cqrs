@@ -8,7 +8,7 @@ export interface LineData {
   participants: Participant[];
 }
 
-export function useConversationForm() {
+export function useConversationForm(onSuccess?: () => void) {
   const [conversationDate, setConversationDate] = useState("");
   const [lines, setLines] = useState<LineData[]>([
     { text: "", lineType: "SPEECH" as LineType, punchLine: false, participants: [] },
@@ -55,6 +55,9 @@ export function useConversationForm() {
       const created = await res.json();
       console.log("created", created);
       // reset if desired
+      if (onSuccess) {
+        onSuccess();
+      }
     } catch (err) {
       console.error("submit failed", err);
     }
