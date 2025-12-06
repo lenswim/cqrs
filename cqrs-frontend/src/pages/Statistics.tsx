@@ -1,6 +1,6 @@
 import { Box, Text, Flex, VStack, SimpleGrid } from '@chakra-ui/react';
 import { useTheme } from '../contexts/ThemeContext';
-import { lightTheme, darkTheme, stylePresets } from '../styles/theme';
+import { lightTheme, darkTheme, stylePresets, responsivePadding, responsiveSpacing } from '../styles/theme';
 import { useConversationList } from '../hooks';
 import { useStatistics } from '../hooks/useStatistics';
 
@@ -22,12 +22,12 @@ function StatCard({
     <Box
       bg={theme.background.card}
       borderRadius="12px"
-      p={6}
+      p={responsivePadding}
       border="1px solid"
       borderColor={theme.border.light}
       boxShadow={theme.shadow.sm}
     >
-      <Flex align="center" gap={4}>
+      <Flex align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
         <Box
           fontSize="40px"
           bg={color}
@@ -73,31 +73,31 @@ function LeaderboardCard({
     <Box
       bg={theme.background.card}
       borderRadius="12px"
-      p={6}
+      p={responsivePadding}
       border="1px solid"
       borderColor={theme.border.light}
       boxShadow={theme.shadow.sm}
     >
-      <Flex align="center" gap={3} mb={5}>
+      <Flex align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
         <Text fontSize="24px">{icon}</Text>
         <Text fontSize="18px" fontWeight="700" color={theme.text.primary}>
           {title}
         </Text>
       </Flex>
 
-      <VStack align="stretch" gap={3}>
+      <VStack align="stretch" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
         {items.slice(0, 5).map((item, index) => (
           <Flex
             key={item.name}
             align="center"
             justify="space-between"
-            p={3}
+            p={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
             bg={index === 0 ? color + '20' : theme.background.tertiary}
             borderRadius="8px"
             border="1px solid"
             borderColor={index === 0 ? color : theme.border.light}
           >
-            <Flex align="center" gap={3}>
+            <Flex align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
               <Flex
                 w="28px"
                 h="28px"
@@ -132,7 +132,7 @@ export default function Statistics() {
   const stats = useStatistics(conversations);
 
   return (
-    <Box maxW="1400px" mx="auto">
+    <Box {...stylePresets.pageContainer}>
       <Text {...stylePresets.pageTitle} color={theme.text.primary}>
         Statistics
       </Text>
@@ -141,7 +141,9 @@ export default function Statistics() {
       </Text>
 
       {/* Overview Cards */}
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={6} mb={8}>
+      <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} 
+        gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} 
+        mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
         <StatCard
           title="Total Conversations"
           value={stats.totalConversations}
@@ -169,7 +171,9 @@ export default function Statistics() {
       </SimpleGrid>
 
       {/* Leaderboards */}
-      <SimpleGrid columns={{ base: 1, lg: 2 }} gap={6} mb={8}>
+      <SimpleGrid columns={{ base: 1, lg: 2 }} 
+        gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} 
+        mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
         <LeaderboardCard
           title="Top Punchline Deliverers"
           items={stats.participantStats.map(p => ({
@@ -199,23 +203,23 @@ export default function Statistics() {
       <Box
         bg={theme.background.card}
         borderRadius="12px"
-        p={6}
+        p={responsivePadding}
         border="1px solid"
         borderColor={theme.border.light}
         boxShadow={theme.shadow.sm}
       >
-        <Flex align="center" gap={3} mb={5}>
+        <Flex align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
           <Text fontSize="24px">👥</Text>
           <Text fontSize="18px" fontWeight="700" color={theme.text.primary}>
             All Participants
           </Text>
         </Flex>
 
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={4}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
           {stats.participantStats.map((participant) => (
             <Box
               key={participant.name}
-              p={4}
+              p={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
               bg={theme.background.tertiary}
               borderRadius="8px"
               border="1px solid"
@@ -224,7 +228,7 @@ export default function Statistics() {
               <Text fontSize="15px" fontWeight="700" color={theme.text.primary} mb={2}>
                 {participant.name}
               </Text>
-              <Flex gap={4} fontSize="12px">
+              <Flex gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} fontSize="12px">
                 <Text color={theme.text.secondary}>
                   ⚡ {participant.punchlineCount}
                 </Text>

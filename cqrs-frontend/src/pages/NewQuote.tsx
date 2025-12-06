@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import { useTheme } from '../contexts/ThemeContext';
 import { useToaster } from '../contexts/ToasterContext';
-import { lightTheme, darkTheme, transitions, stylePresets } from '../styles/theme';
+import { lightTheme, darkTheme, transitions, stylePresets, responsivePadding, responsiveSpacing } from '../styles/theme';
 import { ConversationDateField, LineEditor } from '../components/conversation';
 import { useConversationForm } from '../hooks';
 import { useNavigate } from "react-router-dom";
@@ -48,14 +48,14 @@ export default function NewQuote() {
             <Box
                 bg={theme.background.card}
                 borderRadius="12px"
-                p={8}
+                p={responsivePadding}
                 border="1px solid"
                 borderColor={theme.border.light}
                 boxShadow={theme.shadow.md}
             >
                 {/* Conversation Date */}
-                <Box mb={8}>
-                    <Text fontSize="14px" fontWeight="600" color={theme.text.primary} mb={3}>
+                <Box mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
+                    <Text fontSize="14px" fontWeight="600" color={theme.text.primary} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
                         📅 Conversation Date
                     </Text>
                     <ConversationDateField
@@ -65,21 +65,21 @@ export default function NewQuote() {
                 </Box>
 
                 {/* Lines */}
-                <Box mb={6}>
-                    <Text fontSize="14px" fontWeight="600" color={theme.text.primary} mb={4}>
+                <Box mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
+                    <Text fontSize="14px" fontWeight="600" color={theme.text.primary} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
                         💬 Conversation Lines
                     </Text>
                     <LineEditor lines={lines} onLineChange={handleLineChange} />
                 </Box>
 
                 {/* Action Buttons */}
-                <Box display="flex" gap={4} mt={8}>
+                <Box display="flex" flexDirection={{ base: 'column', md: 'row' }} gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} mt={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
                     <Box
                         as="button"
                         onClick={addLine}
-                        flex="1"
-                        px={6}
-                        py={3}
+                        flex={{ base: '1', md: '1' }}
+                        px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}
+                        py={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
                         borderRadius="8px"
                         fontSize="14px"
                         fontWeight="600"
@@ -100,9 +100,9 @@ export default function NewQuote() {
                     <Box
                         as="button"
                         onClick={handleSubmit}
-                        flex="2"
-                        px={8}
-                        py={3}
+                        flex={{ base: '1', md: '2' }}
+                        px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}
+                        py={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
                         borderRadius="8px"
                         fontSize="14px"
                         fontWeight="600"

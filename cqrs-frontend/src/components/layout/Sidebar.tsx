@@ -1,7 +1,7 @@
 import { Box, VStack, Flex, Text } from '@chakra-ui/react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTheme } from '../../contexts/ThemeContext';
-import { lightTheme, darkTheme, spacing, transitions } from '../../styles/theme';
+import { lightTheme, darkTheme, spacing, transitions, responsivePadding, responsiveSpacing } from '../../styles/theme';
 
 interface NavItemProps {
   icon: string;
@@ -18,9 +18,9 @@ function NavItem({ icon, label, isActive, onClick }: NavItemProps) {
   return (
     <Flex
       align="center"
-      gap={3}
-      px={4}
-      py={3}
+      gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+      px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+      py={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
       borderRadius="6px"
       cursor="pointer"
       transition={transitions.fast}
@@ -62,7 +62,7 @@ export function Sidebar() {
       bg={theme.background.sidebar}
       borderRight="1px solid"
       borderColor={theme.border.light}
-      p={6}
+      p={responsivePadding}
       zIndex={100}
     >
       <VStack align="stretch" gap={1}>

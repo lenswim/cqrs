@@ -97,7 +97,7 @@ export const spacing = {
   sidebarWidth: '240px',
   headerHeight: '64px',
   cardGap: '24px',
-  contentPadding: '32px',
+  contentPadding: { base: '16px', md: '32px' },
 };
 
 export const transitions = {
@@ -164,6 +164,14 @@ export const stylePresets = {
     marginBottom: '32px',
   },
 };
+
+export const responsiveSpacing = {
+  mobile: 4,
+  tablet: 6,
+  desktop: 8,
+};
+
+export const responsivePadding = { base: 4, md: 8 };
 
 export type Theme = typeof lightTheme;
 

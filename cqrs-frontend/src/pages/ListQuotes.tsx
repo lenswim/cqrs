@@ -1,7 +1,7 @@
 import { Box, Text, Flex, VStack, Input } from "@chakra-ui/react";
 import { useState, useEffect } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import { lightTheme, darkTheme, transitions, stylePresets } from '../styles/theme';
+import { lightTheme, darkTheme, transitions, stylePresets, responsiveSpacing } from '../styles/theme';
 import { ConversationCard } from '../components/conversation';
 import { useConversationList } from '../hooks';
 
@@ -38,15 +38,15 @@ function FilterSection<T extends string | number>({
   const displayedItems = filteredItems.slice(0, isOpen ? filteredItems.length : 0);
 
   return (
-    <Box mb={6}>
+    <Box mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
       <Flex
         align="center"
         justify="space-between"
-        mb={3}
+        mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
         cursor="pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Flex align="center" gap={2}>
+        <Flex align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
           <Text fontSize="16px">{icon}</Text>
           <Text fontSize="13px" fontWeight="700" color={theme.text.primary} textTransform="uppercase" letterSpacing="0.1em">
             {title}
@@ -56,8 +56,8 @@ function FilterSection<T extends string | number>({
               bg={theme.text.accent}
               color={theme.text.inverse}
               borderRadius="full"
-              px={2}
-              py={0.5}
+              px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+              py={{ base: 0.5, md: 1 }}
               fontSize="11px"
               fontWeight="600"
             >
@@ -78,7 +78,7 @@ function FilterSection<T extends string | number>({
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               size="sm"
-              mb={3}
+              mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
               bg={theme.background.secondary}
               border="1px solid"
               borderColor={theme.border.dark}
@@ -91,16 +91,15 @@ function FilterSection<T extends string | number>({
               onClick={(e) => e.stopPropagation()}
             />
           )}
-          <VStack align="stretch" gap={2} maxH="300px" overflowY="auto">
+          <VStack align="stretch" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} maxH="300px" overflowY="auto">
             {displayedItems.map((item) => {
               const isSelected = selectedItems.includes(item);
               return (
                 <Flex
-                  key={item}
                   align="center"
-                  gap={3}
-                  px={3}
-                  py={2}
+                  gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+                  px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+                  py={{ base: responsiveSpacing.mobile, md: 1 }}
                   borderRadius="4px"
                   cursor="pointer"
                   transition={transitions.fast}
@@ -219,12 +218,13 @@ export default function ListQuotes() {
             <Flex gap={6} align="start">
                 {/* Filters Sidebar */}
                 <Box
-                    w="220px"
+                    w={{ base: '100%', md: '220px' }}
                     flexShrink={0}
-                    position="sticky"
-                    top="80px"
-                    maxH="calc(100vh - 100px)"
-                    overflowY="auto"
+                    position={{ base: 'relative', md: 'sticky' }}
+                    top={{ md: '80px' }}
+                    maxH={{ md: 'calc(100vh - 100px)' }}
+                    overflowY={{ md: 'auto' }}
+                    mb={{ base: responsiveSpacing.mobile, md: 0 }}
                 >
                     <FilterSection
                         title="Participants"
@@ -250,8 +250,8 @@ export default function ListQuotes() {
                             direction="column"
                             align="center"
                             justify="center"
-                            py={20}
-                            gap={4}
+                            py={{ base: responsiveSpacing.desktop, md: 20 }}
+                            gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
                         >
                             <Text fontSize="48px">🔍</Text>
                             <Text fontSize="18px" fontWeight="600" color={theme.text.primary}>
@@ -263,7 +263,7 @@ export default function ListQuotes() {
                         </Flex>
                     ) : (
                         <>
-                            <VStack align="stretch" gap={4} mb={8}>
+                            <VStack align="stretch" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
                                 {paginatedConversations.map((conversation) => (
                                     <ConversationCard
                                         key={conversation.id}
@@ -274,7 +274,7 @@ export default function ListQuotes() {
 
                             {/* Pagination Controls */}
                             {totalPages > 1 && (
-                                <Flex justify="center" align="center" gap={2} mt={8} mb={4}>
+                                <Flex justify="center" align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} mt={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
                                     <Box
                                         as="button"
                                         aria-label="First page"

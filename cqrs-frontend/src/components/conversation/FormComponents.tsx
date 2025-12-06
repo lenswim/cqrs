@@ -1,7 +1,7 @@
 import { Box, VStack, Textarea, Field, Select, Input, createListCollection, HStack } from "@chakra-ui/react";
 import { Checkbox } from "@chakra-ui/react/checkbox";
 import { useTheme } from '../../contexts/ThemeContext';
-import { lightTheme, darkTheme, transitions } from '../../styles/theme';
+import { lightTheme, darkTheme, transitions, responsivePadding, responsiveSpacing } from '../../styles/theme';
 import type { LineData } from '../../hooks/useConversationForm';
 import type { LineType, Participant } from '../../types/types';
 
@@ -30,8 +30,8 @@ export function ConversationDateField({ value, onChange }: ConversationDateField
         bg={theme.background.tertiary}
         borderColor={theme.border.medium}
         color={theme.text.primary}
-        px={4}
-        py={2}
+        px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+        py={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
         borderRadius="8px"
         fontSize="14px"
         transition={transitions.fast}
@@ -69,13 +69,13 @@ export function ParticipantEditor({ participants, onParticipantsChange }: Partic
 
   return (
     <Box>
-      <Box mb={3} display="flex" alignItems="center" justifyContent="space-between">
+      <Box mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} display="flex" alignItems="center" justifyContent="space-between">
         <Box fontSize="13px" fontWeight="600" color={theme.text.primary}>👥 Participants</Box>
         <Box
           as="button"
           onClick={addParticipant}
-          px={3}
-          py={1}
+          px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+          py={{ base: 1, md: responsiveSpacing.mobile }}
           borderRadius="6px"
           fontSize="12px"
           fontWeight="600"
@@ -93,7 +93,7 @@ export function ParticipantEditor({ participants, onParticipantsChange }: Partic
 
       {participants.length === 0 ? (
         <Box
-          p={3}
+          p={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
           bg={theme.background.tertiary}
           borderRadius="8px"
           textAlign="center"
@@ -103,9 +103,9 @@ export function ParticipantEditor({ participants, onParticipantsChange }: Partic
           No participants added. Click ➕ to add participants.
         </Box>
       ) : (
-        <VStack gap={2} align="stretch">
+        <VStack gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} align="stretch">
           {participants.map((participant, index) => (
-            <HStack key={index} gap={3}>
+            <HStack key={index} gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
               <Box flex="1">
                 <Input
                   placeholder="Participant name"
@@ -115,8 +115,8 @@ export function ParticipantEditor({ participants, onParticipantsChange }: Partic
                   borderColor={theme.border.medium}
                   color={theme.text.primary}
                   fontSize="14px"
-                  px={3}
-                  py={2}
+                  px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+                  py={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
                   borderRadius="6px"
                   _focus={{
                     borderColor: theme.accent.primary,
@@ -141,8 +141,8 @@ export function ParticipantEditor({ participants, onParticipantsChange }: Partic
               <Box
                 as="button"
                 onClick={() => removeParticipant(index)}
-                px={2}
-                py={2}
+                px={{ base: 2, md: responsiveSpacing.mobile }}
+                py={{ base: 2, md: responsiveSpacing.mobile }}
                 borderRadius="6px"
                 fontSize="14px"
                 bg={theme.accent.danger}
@@ -173,13 +173,13 @@ export function LineEditor({ lines, onLineChange }: LineEditorProps) {
   const theme = mode === 'light' ? lightTheme : darkTheme;
 
   return (
-    <VStack align="stretch" gap={4}>
+    <VStack align="stretch" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
       {lines.map((line, index) => (
         <Box
           key={index}
           bg={theme.background.tertiary}
           borderRadius="10px"
-          p={5}
+          p={{ base: responsiveSpacing.tablet, md: responsiveSpacing.desktop }}
           border="2px solid"
           borderColor={line.punchLine ? theme.stats.punchlines : theme.border.light}
           transition={transitions.normal}
@@ -188,16 +188,16 @@ export function LineEditor({ lines, onLineChange }: LineEditorProps) {
             fontSize="13px"
             fontWeight="700"
             color={theme.text.primary}
-            mb={4}
+            mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
             display="flex"
             alignItems="center"
-            gap={2}
+            gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
           >
             <Box>Line {index + 1}</Box>
           </Box>
 
           {/* Line Type Select */}
-          <Field.Root id={`line-type-${index}`} mb={4}>
+          <Field.Root id={`line-type-${index}`} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
             <Field.Label fontSize="13px" fontWeight="600" color={theme.text.primary} mb={2}>
               Line Type
             </Field.Label>
@@ -250,7 +250,7 @@ export function LineEditor({ lines, onLineChange }: LineEditorProps) {
           </Field.Root>
 
           {/* Participants */}
-          <Box mb={4}>
+          <Box mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
             <ParticipantEditor
               participants={line.participants}
               onParticipantsChange={(participants) => onLineChange(index, "participants", participants)}
@@ -258,7 +258,7 @@ export function LineEditor({ lines, onLineChange }: LineEditorProps) {
           </Box>
 
           {/* Text Field */}
-          <Field.Root id={`line-text-${index}`} mb={4}>
+          <Field.Root id={`line-text-${index}`} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
             <Field.Label fontSize="13px" fontWeight="600" color={theme.text.primary} mb={2}>
               Text
             </Field.Label>
@@ -281,7 +281,7 @@ export function LineEditor({ lines, onLineChange }: LineEditorProps) {
           {/* Punch Line Checkbox */}
           <Field.Root id={`line-punch-${index}`}>
             <Box
-              p={3}
+              p={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
               borderRadius="8px"
               bg={line.punchLine ? theme.stats.punchlines + '20' : theme.background.secondary}
               borderWidth={2}
@@ -295,7 +295,7 @@ export function LineEditor({ lines, onLineChange }: LineEditorProps) {
                 }}
               >
                 <Checkbox.HiddenInput />
-                <Box display="flex" alignItems="center" gap={2}>
+                <Box display="flex" alignItems="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
                   <Checkbox.Control
                     borderColor={line.punchLine ? theme.stats.punchlines : theme.border.dark}
                   />

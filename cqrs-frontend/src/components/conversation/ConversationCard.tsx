@@ -1,7 +1,7 @@
 // import { Box, Text, Flex } from '@chakra-ui/react';
 import { Box, Text } from '@chakra-ui/react';
 import { useTheme } from '../../contexts/ThemeContext';
-import { lightTheme, darkTheme, transitions } from '../../styles/theme';
+import { lightTheme, darkTheme, transitions, responsivePadding, responsiveSpacing } from '../../styles/theme';
 import type { Conversation } from '../../types/types';
 
 interface ConversationCardProps {
@@ -16,7 +16,7 @@ export function ConversationCard({ conversation }: ConversationCardProps) {
     <Box
       bg={theme.background.card}
       borderRadius="8px"
-      p={6}
+      p={responsivePadding}
       cursor="pointer"
       transition={transitions.normal}
       border="1px solid"
@@ -29,7 +29,7 @@ export function ConversationCard({ conversation }: ConversationCardProps) {
         borderColor: theme.border.medium,
       }}
     >
-      <Box display="flex" flexDirection="column" gap={4}>
+      <Box display="flex" flexDirection="column" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
         {/* Date Badge */}
         <Text fontSize="12px" fontWeight="600" color={theme.text.accent}>
           {new Date(conversation.conversationDate).toLocaleDateString('en-US', {

@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 import { useTheme } from '../../contexts/ThemeContext';
-import { lightTheme, darkTheme, spacing } from '../../styles/theme';
+import { lightTheme, darkTheme, spacing, responsivePadding } from '../../styles/theme';
 
 interface LayoutProps {
   children: ReactNode;
@@ -15,12 +15,14 @@ export function Layout({ children }: LayoutProps) {
 
   return (
     <Box bg={theme.background.primary} minH="100vh">
-      <Sidebar />
+      <Box display={{ base: 'none', md: 'block' }}>
+        <Sidebar />
+      </Box>
       <Header />
       <Box
-        ml={spacing.sidebarWidth}
+        ml={{ base: 0, md: spacing.sidebarWidth}}
         mt={spacing.headerHeight}
-        p={8}
+        p={responsivePadding}
         minH={`calc(100vh - ${spacing.headerHeight})`}
       >
         {children}

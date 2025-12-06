@@ -1,6 +1,7 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { useTheme } from '../../contexts/ThemeContext';
-import { lightTheme, darkTheme, spacing, transitions } from '../../styles/theme';
+import { lightTheme, darkTheme, spacing, transitions, responsivePadding, responsiveSpacing } from '../../styles/theme';
+import { MobileMenu } from './MobileMenu';
 
 export function Header() {
   const { mode, toggleTheme } = useTheme();
@@ -10,25 +11,31 @@ export function Header() {
     <Flex
       position="fixed"
       top={0}
-      left={spacing.sidebarWidth}
+      left={{ base: 0, md: spacing.sidebarWidth }}
       right={0}
       h={spacing.headerHeight}
       bg={theme.background.primary}
       borderBottom="1px solid"
       borderColor={theme.border.light}
       align="center"
-      justify="flex-end"
-      px={8}
+      justify={{ base: 'space-between', md: 'flex-end' }}
+      px={responsivePadding}
       zIndex={99}
     >
+      <MobileMenu />
+
+      <Text fontSize="16px" fontWeight="700" color={theme.text.primary} display={{ base: 'block', md: 'none' }}>
+        CQRS
+      </Text>
+
       {/* Theme Toggle */}
       <Flex
         align="center"
-        gap={2}
+        gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
         cursor="pointer"
         onClick={toggleTheme}
-        px={4}
-        py={2}
+        px={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
+        py={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
         borderRadius="20px"
         bg={theme.background.tertiary}
         border="1px solid"
@@ -39,8 +46,10 @@ export function Header() {
           borderColor: theme.border.dark,
         }}
       >
-        <Text fontSize="18px">{mode === 'light' ? '🌙' : '☀️'}</Text>
-        <Text fontSize="13px" fontWeight="600" color={theme.text.primary}>
+        <Text fontSize={{ base: '14px', md: '18px' }}>
+          {mode === 'light' ? '🌙' : '☀️'}
+        </Text>
+        <Text fontSize={{ base: '11px', md: '13px' }} fontWeight="600" color={theme.text.primary} display={{ base: 'none', md: 'block' }}>
           {mode === 'light' ? 'Dark' : 'Light'} Mode
         </Text>
       </Flex>
