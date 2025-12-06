@@ -1,0 +1,4 @@
+###
+GET https://cqrs-x6ks.onrender.com/conversations
+Accept: application/json
+###
