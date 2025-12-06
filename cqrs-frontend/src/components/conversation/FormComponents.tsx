@@ -1,7 +1,7 @@
 import { Box, VStack, Textarea, Field, Select, Input, createListCollection, HStack } from "@chakra-ui/react";
 import { Checkbox } from "@chakra-ui/react/checkbox";
 import { useTheme } from '../../contexts/ThemeContext';
-import { lightTheme, darkTheme, transitions, responsivePadding, responsiveSpacing } from '../../styles/theme';
+import { lightTheme, darkTheme, transitions, responsiveSpacing } from '../../styles/theme';
 import type { LineData } from '../../hooks/useConversationForm';
 import type { LineType, Participant } from '../../types/types';
 
