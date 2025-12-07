@@ -1,7 +1,7 @@
 [
   {
     "conversation": {
-      "id": "52448580bb13b45e2c6a36e4",
+      "id": "720531ab2f4f691f402acef9",
       "createdOn": "2017-01-01T00:00:00.000Z",
       "conversationDate": "2017-01-01",
       "lines": [
@@ -19,7 +19,7 @@
         {
           "text": "Willem toont ook een tekeningske",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -38,14 +38,14 @@
   },
   {
     "conversation": {
-      "id": "a8875b75f2a521d02072c581",
+      "id": "6bfb9fc8aa75a99e404d7861",
       "createdOn": "2017-03-14T23:59:59.800Z",
       "conversationDate": "2017-03-14",
       "lines": [
         {
           "text": "Vincent zet zich na de scrum aan een random pc",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -75,7 +75,7 @@
   },
   {
     "conversation": {
-      "id": "9395a7de60b047aa5a3d1b55",
+      "id": "92e30c24be9d671b08787746",
       "createdOn": "2017-05-26T23:59:59.600Z",
       "conversationDate": "2017-05-26",
       "lines": [
@@ -104,7 +104,7 @@
         {
           "text": "beeldt lopen uit",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -121,7 +121,7 @@
         {
           "text": "beeldt roeien uit",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -138,7 +138,7 @@
         {
           "text": "beeldt iets uit met zn benen...",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -157,7 +157,7 @@
   },
   {
     "conversation": {
-      "id": "510aa8093470a993fa787bd4",
+      "id": "0d966db5e5d89de6d39f66a5",
       "createdOn": "2017-08-07T23:59:59.400Z",
       "conversationDate": "2017-08-07",
       "lines": [
@@ -188,7 +188,7 @@
   },
   {
     "conversation": {
-      "id": "1dbcfb17eb601728ccb5d421",
+      "id": "291cdf8b9754c99e7a697482",
       "createdOn": "2017-10-19T23:59:59.200Z",
       "conversationDate": "2017-10-19",
       "lines": [

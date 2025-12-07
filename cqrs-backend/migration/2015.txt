@@ -10,22 +10,22 @@ Lenne: Schieten en wegwezen
 
 Lenne: Erlend en ik hebben gisteren uitgezocht wat we vorige sprint eigelijk gedaan hebben
 
-Vlak voor demo
+*Vlak voor demo*
 Linus: Zullen we aan de retro beginnen?
 Lenne: nu al?
 Lenne: Een premature retro, typisch mannelijk eigelijk e
 
-Tim veegt het bord af
+*Tim veegt het bord af*
 Tim: Waar is de Dirk Lens als ge hem nodig hebt ?
 
-Kevin komt uit het niets aan wim zijn stoel prullen (proberen omlaag te doen)
+*Kevin komt uit het niets aan wim zijn stoel prullen (proberen omlaag te doen)*
 Kevin: "Gij zijt een klein klootzakske é gij !"
 
-Tim vergelijkt de foto van Rob op Lync (zonder bril) met Rob zelf (met bril)
+*Tim vergelijkt de foto van Rob op Lync (zonder bril) met Rob zelf (met bril)*
 Tim: Vindt ge niet dat Rob er hier (wijst naar de foto) slimmer uitziet?
 Wim: Da komt omdat ge hem daar niet hoort praten
 
-Random discussie over mannelijkheid tussen Tim en Rob
+*Random discussie over mannelijkheid tussen Tim en Rob*
 Tim: *roept* Wie ziet er het mannelijkst uit binnen Ventouris? Lenne..en dan Jorgo..EN AL DE REST ZIJN FUCKING PUSSIES!
 Ondertussen in een groupsdiscussie tussen Wim, Kevin, Luc en Willem
 Willem: Mag het? Wij zijn wel over ons haar bezig
@@ -43,18 +43,18 @@ Lenne: Ja, ik zit erin..... (Nee, niet in de quotes e!!)
 
 Rob: Onze schermen zijn niet groot genoeg voor deze code
 
-Rob komt redelijk in stealth mode achter Véronique en Lut staan
-... (ongoing discussie tussen Véronique en Lut) ....
-... +/- een minuut ...
+*Rob komt redelijk in stealth mode achter Véronique en Lut staan*
+*... (ongoing discussie tussen Véronique en Lut) ....*
+*... +/- een minuut ...*
 Rob: ... Stoor ik?
 
 
-Kevin over zijn trouwring bezig
+*Kevin over zijn trouwring bezig*
 Kevin: ..en er staat ook iets in gegraveerd
 Wim: Watte?
 Jorgo: GTA-cheatcodes
 
-Lenne vraagt iets aan Tanguy
+*Lenne vraagt iets aan Tanguy*
 Tanguy: Ik zie er het nut nie van in, maar als u da nuttig lijkt wil ik da wel doen
 
 Willem: Gaat gij naar Cegeka in the cloud
@@ -62,15 +62,15 @@ Wim: Nee
 Willem: Wim gaat wel denk ik e?
 Wim: Ik ben Wim.
 
-Tijdens de retro-opwarming wordt er 'doktertje knoop' gespeeld
+*Tijdens de retro-opwarming wordt er 'doktertje knoop' gespeeld*
 Lenne: Hey Kevin, kom eens aan mijn linkerhand trekken..
 
-Lenne neemt de laptop van Tanguy mee voor de code-review
+*Lenne neemt de laptop van Tanguy mee voor de code-review*
 Lenne: Hey en wat is uw paswoord?
 Tanguy: Ge moet gewoon zorgen dat die nie in slaapstand gaat
 Lenne: Oke, dan zal ik over uw muis blijven wrijven
 
-Het is 04 juni 2015 en 25°C.
+*Het is 04 juni 2015 en 25°C.*
 Willem: Ik heb laatst (*in maart*) een mail zien passeren over vervangen van winterbanden, maar wanneer moet ge da juist doen?
 
 Wim: Boem! Hier is de query, hij werkt maar hij doet niks.
@@ -82,7 +82,7 @@ Wim: huh, wat dan?
 Kevin: een vent e
 Tim en Jorgo: Oooohw snap!
 
-Kevin gaat naar Wim
+*Kevin gaat naar Wim*
 Kevin: Weet ge wat suuuperfrustrerend is?
 Wim: Da ik knapper ben dan u?
 
@@ -98,14 +98,14 @@ Luc: Dat is ne method.
 
 Kevin: Onvoltooid verleden tijd. dat is ook iets wat ik niet snap: wat is daar nu onvoltooid aan? Hoe kan dat, iets onvoltooid in het verleden..
 
-Ann vraagt aan Rob om haar een mail te sturen zodat zij de volgende ochtend weet waar hij mee bezig was/is
+*Ann vraagt aan Rob om haar een mail te sturen zodat zij de volgende ochtend weet waar hij mee bezig was/is*
 Rob zijn mail: De fout is gefixed, ik ben nu met iets anders bezig.
 
-Luc en Kevin zijn aan het discussiëren over wie een CR gaat oppakken
+*Luc en Kevin zijn aan het discussiëren over wie een CR gaat oppakken*
 Luc: Ge gaat die leuk vinden, da's een hele toffe
 Kevin: Da zeide ze over Wim Lens ook
 
-Tijdens de retro leest Vincent de kaartjes voor met de motivering waarom de voorbije sprint goed of slecht was
+*Tijdens de retro leest Vincent de kaartjes voor met de motivering waarom de voorbije sprint goed of slecht was*
 Er bestaat 1 kaartje met hierop de tekst 'Weinig volk' waarbij er gevraagd wordt of dit nu goed of slecht is?
 Willem: 'Weinig volk' was eigenlijk meer 'weinig volk'. Dus ja, er is weinig volk.
 
@@ -113,11 +113,11 @@ Kevin: Kent ge da liedje van Samson en Gert, roeien?
 Willem: Hoe gaat da?
 Kevin: (al zingend) Roeien!
 
-Vincent geeft uitleg aan klanten over werking van Ventouris en shizzle
+*Vincent geeft uitleg aan klanten over werking van Ventouris en shizzle*
 Klant: ..en na de ontwikkeling, gaat het story-document naar de vuilbak?
 Vincent: bwah, naar sharepoint. Komt op hetzelfde neer.
 
-Tim heeft heel de dag iets met aanvraag niet-regul gedaan
+*Tim heeft heel de dag iets met aanvraag niet-regul gedaan*
 Tim: Als ik hier straks nog iets van weet, dan hang ik mezelf op!
 
 Kevin: Ik ga een pokémon als (kanban)avatar nemen, HOE VET IS DA WEL NIE?!
@@ -129,7 +129,7 @@ Bart: Ideaal, want die query is kapot.
 Ann: Seg, Kevin gaat geopereerd worden ofwat?
 Wim: Ja, ze gaan zijn kop amputeren.
 
-Na 1u40min naar het werk gereden te hebben
+*Na 1u40min naar het werk gereden te hebben*
 Wim: Ik heb 4 keer het nieuws gehoord.
 Jorgo: En was er iets interessants?
 Wim: Ja, er is 4 keer een boot gezonken.
@@ -137,31 +137,31 @@ Wim: Ja, er is 4 keer een boot gezonken.
 Tim: Hoe werken die 1,2,3,4 upgrade scripts in Vennootschappen?
 Ann: 1 komt voor 2, 2 komt voor 3 en 3 komt voor 4.
 
-Lenne komt om 14.10u terug van middagpauze
+*Lenne komt om 14.10u terug van middagpauze*
 Wim: Amai, goed gegeten precies?
 
-Tim S vraagt aan Wim of hij scrum master wil zijn, waarna Wim vraagt wat hij in de plaats krijgt
+*Tim S vraagt aan Wim of hij scrum master wil zijn, waarna Wim vraagt wat hij in de plaats krijgt*
 Tim: Ge krijgt van mij een blauw doosje waarop staat Kevin en Valerie, 25-04-2015...
 ...Kijkt nog eens naar het doosje...
 Tim: Er staat nog iets op geschreven...
 Wim: (die met zn rug naar het doosje zit) Dat is een einddatum denk ik.
 
-Terwijl Willem naar buiten gaat
+*Terwijl Willem naar buiten gaat*
 Willem: Hedde gij geen 5 minuten pauze nodig?
 Jorgo: Ik heb 5 jaar pauze nodig.
 
-Tim hoest een hoop snot en slijm op (longen uit het lijf zoals ze zeggen) terwijl Willem aka patient zero voorbij loopt
+*Tim hoest een hoop snot en slijm op (longen uit het lijf zoals ze zeggen) terwijl Willem aka patient zero voorbij loopt*
 Tim: Hier se jom *steekt middelvinger op*
 
-Jaak van STAID aan de telefoon
+*Jaak van STAID aan de telefoon*
 Jaak: Luister, als gij zegt 'breek da af', dan breek ik da af
 Jaak: Als gij zegt 'breek da niet af', dan doe ik niks.
 
-Na 9 dagen aan een story voor E-Loket - New Dispensa gewerkt te hebben
+*Na 9 dagen aan een story voor E-Loket - New Dispensa gewerkt te hebben*
 Kevin: Jorgo, test zeker New Dispensa ook
 Willem: Wat is New Dispensa?
 
-Luc komt terug van griepvaccinatie
+*Luc komt terug van griepvaccinatie*
 Luc: Ik had niet eens gevoeld dat em gespoten had
 Tim: That's what she said!
 
@@ -171,7 +171,7 @@ Wim: Wa? Uw huwelijk?
 Tim: Wij hebben trouwens ne nieuwe queue bijgemaakt!
 Kevin: Ja sgoed, daar word ge voor betaald é
 
-1 jaar na de feiten
+*1 jaar na de feiten*
 Louis: Ah, er zijn 2 teams? Dat wist ik niet.
 
 *Jorgo aan telefoon*
@@ -188,14 +188,14 @@ Jorgo: snul
 
 Wim: Beter scheef erin, dan recht erneffe  (parkeren)
 
-sightseeing trip van Willem op 17/11/2015
-Tremelo - Aarschot (auto)
-Aarschot - Leuven - Brussel (trein)
-Brussel - Leuven - Landen (trein)
-Landen - Leuven (trein)
-Leuven - Aarschot (trein)
-Aarschot - Haasrode (auto)
-Haasrode - Tremelo (auto)
+*sightseeing trip van Willem op 17/11/2015*
+*Tremelo - Aarschot (auto)*
+*Aarschot - Leuven - Brussel (trein)*
+*Brussel - Leuven - Landen (trein)*
+*Landen - Leuven (trein)*
+*Leuven - Aarschot (trein)*
+*Aarschot - Haasrode (auto)*
+*Haasrode - Tremelo (auto)*
 
 Tim D.:  En wat gaan jullie coaches doen vanzodra evaluaties gedaan zijn?
 Lenne: Goh, ik heb nog geen idee hoe ik da leeg gat ga vullen...

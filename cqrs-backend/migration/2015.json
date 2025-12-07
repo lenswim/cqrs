@@ -1,7 +1,7 @@
 [
   {
     "conversation": {
-      "id": "204c614a435956b0043c5cac",
+      "id": "67df93cb7cdc817514c860a0",
       "createdOn": "2015-01-01T00:00:00.000Z",
       "conversationDate": "2015-01-01",
       "lines": [
@@ -32,9 +32,9 @@
   },
   {
     "conversation": {
-      "id": "731988c425ef8931b6b24791",
-      "createdOn": "2015-01-08T00:27:41.519Z",
-      "conversationDate": "2015-01-08",
+      "id": "2b29c502103de9942fba7bf9",
+      "createdOn": "2015-01-07T21:16:58.849Z",
+      "conversationDate": "2015-01-07",
       "lines": [
         {
           "text": "*veeg* *veeg*",
@@ -74,9 +74,9 @@
   },
   {
     "conversation": {
-      "id": "374d15c32496d33c13c03694",
-      "createdOn": "2015-01-15T00:55:23.038Z",
-      "conversationDate": "2015-01-15",
+      "id": "dccfa8a06666cd9f29fc30d5",
+      "createdOn": "2015-01-14T18:33:57.698Z",
+      "conversationDate": "2015-01-14",
       "lines": [
         {
           "text": "Schieten en wegwezen",
@@ -94,9 +94,9 @@
   },
   {
     "conversation": {
-      "id": "9f8a185c587af71c69998ffe",
-      "createdOn": "2015-01-22T01:23:04.557Z",
-      "conversationDate": "2015-01-22",
+      "id": "64cb463f07e9167c9a3a72df",
+      "createdOn": "2015-01-21T15:50:56.547Z",
+      "conversationDate": "2015-01-21",
       "lines": [
         {
           "text": "Erlend en ik hebben gisteren uitgezocht wat we vorige sprint eigelijk gedaan hebben",
@@ -114,10 +114,16 @@
   },
   {
     "conversation": {
-      "id": "361a56bced2f27d8f81a147c",
-      "createdOn": "2015-01-29T01:50:46.076Z",
-      "conversationDate": "2015-01-29",
+      "id": "9f1e45e3bc145606f28ee7a4",
+      "createdOn": "2015-01-28T13:07:55.396Z",
+      "conversationDate": "2015-01-28",
       "lines": [
+        {
+          "text": "Vlak voor demo",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Zullen we aan de retro beginnen?",
           "punchLine": false,
@@ -156,10 +162,16 @@
   },
   {
     "conversation": {
-      "id": "721ee1f14d4865ce0ff82b4b",
-      "createdOn": "2015-02-05T02:18:27.596Z",
-      "conversationDate": "2015-02-05",
+      "id": "ccd3eb12654c08221066a67a",
+      "createdOn": "2015-02-04T10:24:54.245Z",
+      "conversationDate": "2015-02-04",
       "lines": [
+        {
+          "text": "Tim veegt het bord af",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Waar is de Dirk Lens als ge hem nodig hebt ?",
           "punchLine": true,
@@ -176,10 +188,16 @@
   },
   {
     "conversation": {
-      "id": "32c9ddc5bb6a62bacf2e327f",
-      "createdOn": "2015-02-12T02:46:09.115Z",
-      "conversationDate": "2015-02-12",
+      "id": "5d9adcc6953acf88bc652d4d",
+      "createdOn": "2015-02-11T07:41:53.094Z",
+      "conversationDate": "2015-02-11",
       "lines": [
+        {
+          "text": "Kevin komt uit het niets aan wim zijn stoel prullen (proberen omlaag te doen)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "\"Gij zijt een klein klootzakske é gij !\"",
           "punchLine": true,
@@ -196,10 +214,16 @@
   },
   {
     "conversation": {
-      "id": "ee09499f20962b62b9211e2d",
-      "createdOn": "2015-02-19T03:13:50.634Z",
-      "conversationDate": "2015-02-19",
+      "id": "4f5763d2d6fc914d9a42b1d2",
+      "createdOn": "2015-02-18T04:58:51.943Z",
+      "conversationDate": "2015-02-18",
       "lines": [
+        {
+          "text": "Tim vergelijkt de foto van Rob op Lync (zonder bril) met Rob zelf (met bril)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Vindt ge niet dat Rob er hier (wijst naar de foto) slimmer uitziet?",
           "punchLine": false,
@@ -227,10 +251,16 @@
   },
   {
     "conversation": {
-      "id": "f573a038bcfe6c67ec23528b",
-      "createdOn": "2015-02-26T03:41:32.153Z",
-      "conversationDate": "2015-02-26",
+      "id": "586649bdf2283dd95c479196",
+      "createdOn": "2015-02-25T02:15:50.792Z",
+      "conversationDate": "2015-02-25",
       "lines": [
+        {
+          "text": "Random discussie over mannelijkheid tussen Tim en Rob",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "*roept* Wie ziet er het mannelijkst uit binnen Ventouris? Lenne..en dan Jorgo..EN AL DE REST ZIJN FUCKING PUSSIES!",
           "punchLine": false,
@@ -258,9 +288,9 @@
   },
   {
     "conversation": {
-      "id": "775082b25aa0d5039b4ca78f",
-      "createdOn": "2015-03-05T04:09:13.673Z",
-      "conversationDate": "2015-03-05",
+      "id": "4eb9ae457951ceff48b6cdbc",
+      "createdOn": "2015-03-03T23:32:49.641Z",
+      "conversationDate": "2015-03-03",
       "lines": [
         {
           "text": "Ik weet niet...ik heb tot nu toe slechte ervaring met Mac",
@@ -289,9 +319,9 @@
   },
   {
     "conversation": {
-      "id": "1b1e26452219caa88cc11f9f",
-      "createdOn": "2015-03-12T04:36:55.192Z",
-      "conversationDate": "2015-03-12",
+      "id": "2c17092a0fa92a10849a9a8d",
+      "createdOn": "2015-03-10T20:49:48.490Z",
+      "conversationDate": "2015-03-10",
       "lines": [
         {
           "text": "Hallo?..Hallo?",
@@ -307,7 +337,7 @@
         {
           "text": "andere persoon legt af",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -326,9 +356,9 @@
   },
   {
     "conversation": {
-      "id": "eccba79a95bedaaae8e878de",
-      "createdOn": "2015-03-19T05:04:36.711Z",
-      "conversationDate": "2015-03-19",
+      "id": "9a0f12589adf4b06d7f06021",
+      "createdOn": "2015-03-17T18:06:47.339Z",
+      "conversationDate": "2015-03-17",
       "lines": [
         {
           "text": "Zit ge erin?",
@@ -357,9 +387,9 @@
   },
   {
     "conversation": {
-      "id": "03baa46ee7c392094382424c",
-      "createdOn": "2015-03-26T05:32:18.230Z",
-      "conversationDate": "2015-03-26",
+      "id": "e635de2996800e7155960208",
+      "createdOn": "2015-03-24T15:23:46.188Z",
+      "conversationDate": "2015-03-24",
       "lines": [
         {
           "text": "Onze schermen zijn niet groot genoeg voor deze code",
@@ -377,10 +407,28 @@
   },
   {
     "conversation": {
-      "id": "0c02ad274456cb6f7f8f3e6f",
-      "createdOn": "2015-04-02T05:59:59.750Z",
-      "conversationDate": "2015-04-02",
+      "id": "43c159c87f4c9ef8b1899b0c",
+      "createdOn": "2015-03-31T12:40:45.037Z",
+      "conversationDate": "2015-03-31",
       "lines": [
+        {
+          "text": "Rob komt redelijk in stealth mode achter Véronique en Lut staan",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "... (ongoing discussie tussen Véronique en Lut) ....",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "... +/- een minuut ...",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "... Stoor ik?",
           "punchLine": true,
@@ -397,10 +445,16 @@
   },
   {
     "conversation": {
-      "id": "b514a277c6363d8ecc314303",
-      "createdOn": "2015-04-09T06:27:41.269Z",
-      "conversationDate": "2015-04-09",
+      "id": "63102fc0cd50633b2f5264a9",
+      "createdOn": "2015-04-07T09:57:43.886Z",
+      "conversationDate": "2015-04-07",
       "lines": [
+        {
+          "text": "Kevin over zijn trouwring bezig",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "..en er staat ook iets in gegraveerd",
           "punchLine": false,
@@ -439,10 +493,16 @@
   },
   {
     "conversation": {
-      "id": "c31d75ee6b020df40ce207b7",
-      "createdOn": "2015-04-16T06:55:22.788Z",
-      "conversationDate": "2015-04-16",
+      "id": "7a7f86099ee90c36e7b348d3",
+      "createdOn": "2015-04-14T07:14:42.735Z",
+      "conversationDate": "2015-04-14",
       "lines": [
+        {
+          "text": "Lenne vraagt iets aan Tanguy",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ik zie er het nut nie van in, maar als u da nuttig lijkt wil ik da wel doen",
           "punchLine": true,
@@ -459,9 +519,9 @@
   },
   {
     "conversation": {
-      "id": "060a08bd7a24f7805aa0cd92",
-      "createdOn": "2015-04-23T07:23:04.307Z",
-      "conversationDate": "2015-04-23",
+      "id": "28f45f7b38f10f1cebc916b8",
+      "createdOn": "2015-04-21T04:31:41.584Z",
+      "conversationDate": "2015-04-21",
       "lines": [
         {
           "text": "Gaat gij naar Cegeka in the cloud",
@@ -512,10 +572,16 @@
   },
   {
     "conversation": {
-      "id": "0c77c0f419ddb5a4deb8a612",
-      "createdOn": "2015-04-30T07:50:45.826Z",
-      "conversationDate": "2015-04-30",
+      "id": "78584d3288e56e792b4844fb",
+      "createdOn": "2015-04-28T01:48:40.433Z",
+      "conversationDate": "2015-04-28",
       "lines": [
+        {
+          "text": "Tijdens de retro-opwarming wordt er 'doktertje knoop' gespeeld",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Hey Kevin, kom eens aan mijn linkerhand trekken..",
           "punchLine": true,
@@ -532,10 +598,16 @@
   },
   {
     "conversation": {
-      "id": "974cacf0dc6c6aab134a99bf",
-      "createdOn": "2015-05-07T08:18:27.346Z",
-      "conversationDate": "2015-05-07",
+      "id": "4769e629da197dc9d4b28227",
+      "createdOn": "2015-05-04T23:05:39.283Z",
+      "conversationDate": "2015-05-04",
       "lines": [
+        {
+          "text": "Lenne neemt de laptop van Tanguy mee voor de code-review",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Hey en wat is uw paswoord?",
           "punchLine": false,
@@ -574,10 +646,16 @@
   },
   {
     "conversation": {
-      "id": "8e268137829a0c4994473741",
-      "createdOn": "2015-05-14T08:46:08.865Z",
-      "conversationDate": "2015-05-14",
+      "id": "50485ea8decc92c0a415f5d9",
+      "createdOn": "2015-05-11T20:22:38.132Z",
+      "conversationDate": "2015-05-11",
       "lines": [
+        {
+          "text": "Het is 04 juni 2015 en 25°C.",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ik heb laatst (*in maart*) een mail zien passeren over vervangen van winterbanden, maar wanneer moet ge da juist doen?",
           "punchLine": true,
@@ -594,9 +672,9 @@
   },
   {
     "conversation": {
-      "id": "9a4aa7cfded01d63d70ed65b",
-      "createdOn": "2015-05-21T09:13:50.384Z",
-      "conversationDate": "2015-05-21",
+      "id": "5739e61f96a8b85c5ff9aba3",
+      "createdOn": "2015-05-18T17:39:36.981Z",
+      "conversationDate": "2015-05-18",
       "lines": [
         {
           "text": "Boem! Hier is de query, hij werkt maar hij doet niks.",
@@ -625,9 +703,9 @@
   },
   {
     "conversation": {
-      "id": "ca94f335be5e9c6beeccd5a2",
-      "createdOn": "2015-05-28T09:41:31.903Z",
-      "conversationDate": "2015-05-28",
+      "id": "b28ff89bdb52a638e2c1236f",
+      "createdOn": "2015-05-25T14:56:35.830Z",
+      "conversationDate": "2015-05-25",
       "lines": [
         {
           "text": "Jaja, events jom...",
@@ -689,10 +767,16 @@
   },
   {
     "conversation": {
-      "id": "e1359737943d7bed9d78af53",
-      "createdOn": "2015-06-04T10:09:13.423Z",
-      "conversationDate": "2015-06-04",
+      "id": "27cbe3db58a8ea45fe06177b",
+      "createdOn": "2015-06-01T12:13:34.679Z",
+      "conversationDate": "2015-06-01",
       "lines": [
+        {
+          "text": "Kevin gaat naar Wim",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Weet ge wat suuuperfrustrerend is?",
           "punchLine": false,
@@ -720,9 +804,9 @@
   },
   {
     "conversation": {
-      "id": "8d13c0a378da14dd3362a42b",
-      "createdOn": "2015-06-11T10:36:54.942Z",
-      "conversationDate": "2015-06-11",
+      "id": "8e1739a6b6abda7380e77be9",
+      "createdOn": "2015-06-08T09:30:33.528Z",
+      "conversationDate": "2015-06-08",
       "lines": [
         {
           "text": "Dan kunt ge uw 'guns' showen",
@@ -751,9 +835,9 @@
   },
   {
     "conversation": {
-      "id": "64dff9b296dad2dd2a8e5a6a",
-      "createdOn": "2015-06-18T11:04:36.461Z",
-      "conversationDate": "2015-06-18",
+      "id": "5107c61f9a41a77eb7749a56",
+      "createdOn": "2015-06-15T06:47:32.377Z",
+      "conversationDate": "2015-06-15",
       "lines": [
         {
           "text": "Is Lieve naar huis?",
@@ -782,9 +866,9 @@
   },
   {
     "conversation": {
-      "id": "8923074a4e4400e40e24a8eb",
-      "createdOn": "2015-06-25T11:32:17.980Z",
-      "conversationDate": "2015-06-25",
+      "id": "bc0707d02389113b84fb06ff",
+      "createdOn": "2015-06-22T04:04:31.226Z",
+      "conversationDate": "2015-06-22",
       "lines": [
         {
           "text": "Wat doet deze method hier, verminderOfVerwijder?",
@@ -813,9 +897,9 @@
   },
   {
     "conversation": {
-      "id": "a4f657f86fa4f416c26a9a30",
-      "createdOn": "2015-07-02T11:59:59.500Z",
-      "conversationDate": "2015-07-02",
+      "id": "dbfa8363b9dde4bb390141ff",
+      "createdOn": "2015-06-29T01:21:30.075Z",
+      "conversationDate": "2015-06-29",
       "lines": [
         {
           "text": "Onvoltooid verleden tijd. dat is ook iets wat ik niet snap: wat is daar nu onvoltooid aan? Hoe kan dat, iets onvoltooid in het verleden..",
@@ -833,10 +917,16 @@
   },
   {
     "conversation": {
-      "id": "5109e8f4de37322d7f544d77",
-      "createdOn": "2015-07-09T12:27:41.019Z",
-      "conversationDate": "2015-07-09",
+      "id": "f0512c79f779b55d64eabff9",
+      "createdOn": "2015-07-05T22:38:28.924Z",
+      "conversationDate": "2015-07-05",
       "lines": [
+        {
+          "text": "Ann vraagt aan Rob om haar een mail te sturen zodat zij de volgende ochtend weet waar hij mee bezig was/is",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "De fout is gefixed, ik ben nu met iets anders bezig.",
           "punchLine": true,
@@ -853,10 +943,16 @@
   },
   {
     "conversation": {
-      "id": "04d0774142cf86d02ecd71f9",
-      "createdOn": "2015-07-16T12:55:22.538Z",
-      "conversationDate": "2015-07-16",
+      "id": "2fd674870e2f8353bb4dc747",
+      "createdOn": "2015-07-12T19:55:27.773Z",
+      "conversationDate": "2015-07-12",
       "lines": [
+        {
+          "text": "Luc en Kevin zijn aan het discussiëren over wie een CR gaat oppakken",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ge gaat die leuk vinden, da's een hele toffe",
           "punchLine": false,
@@ -884,10 +980,16 @@
   },
   {
     "conversation": {
-      "id": "86398c32b7ada906b68db409",
-      "createdOn": "2015-07-23T13:23:04.057Z",
-      "conversationDate": "2015-07-23",
+      "id": "70788d0f7bc66fa8ab9cc898",
+      "createdOn": "2015-07-19T17:12:26.622Z",
+      "conversationDate": "2015-07-19",
       "lines": [
+        {
+          "text": "Tijdens de retro leest Vincent de kaartjes voor met de motivering waarom de voorbije sprint goed of slecht was",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "'Weinig volk' was eigenlijk meer 'weinig volk'. Dus ja, er is weinig volk.",
           "punchLine": true,
@@ -904,9 +1006,9 @@
   },
   {
     "conversation": {
-      "id": "8710d1a13d16db1260b623aa",
-      "createdOn": "2015-07-30T13:50:45.576Z",
-      "conversationDate": "2015-07-30",
+      "id": "a7997fdd18bfd5efc5723e23",
+      "createdOn": "2015-07-26T14:29:25.471Z",
+      "conversationDate": "2015-07-26",
       "lines": [
         {
           "text": "Kent ge da liedje van Samson en Gert, roeien?",
@@ -946,10 +1048,16 @@
   },
   {
     "conversation": {
-      "id": "e81560d6d25e586b2ca0954f",
-      "createdOn": "2015-08-06T14:18:27.096Z",
-      "conversationDate": "2015-08-06",
+      "id": "017712d60033de4335f4f3f2",
+      "createdOn": "2015-08-02T11:46:24.320Z",
+      "conversationDate": "2015-08-02",
       "lines": [
+        {
+          "text": "Vincent geeft uitleg aan klanten over werking van Ventouris en shizzle",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "..en na de ontwikkeling, gaat het story-document naar de vuilbak?",
           "punchLine": false,
@@ -977,10 +1085,16 @@
   },
   {
     "conversation": {
-      "id": "d26ad00a58de718acd22f819",
-      "createdOn": "2015-08-13T14:46:08.615Z",
-      "conversationDate": "2015-08-13",
+      "id": "f36e187fb0f1367168bf6d24",
+      "createdOn": "2015-08-09T09:03:23.169Z",
+      "conversationDate": "2015-08-09",
       "lines": [
+        {
+          "text": "Tim heeft heel de dag iets met aanvraag niet-regul gedaan",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Als ik hier straks nog iets van weet, dan hang ik mezelf op!",
           "punchLine": true,
@@ -997,9 +1111,9 @@
   },
   {
     "conversation": {
-      "id": "e33a048eecde640639d0b1c5",
-      "createdOn": "2015-08-20T15:13:50.134Z",
-      "conversationDate": "2015-08-20",
+      "id": "4423991ee80e8d52d098b173",
+      "createdOn": "2015-08-16T06:20:22.018Z",
+      "conversationDate": "2015-08-16",
       "lines": [
         {
           "text": "Ik ga een pokémon als (kanban)avatar nemen, HOE VET IS DA WEL NIE?!",
@@ -1017,9 +1131,9 @@
   },
   {
     "conversation": {
-      "id": "299f64703868823be74abacb",
-      "createdOn": "2015-08-27T15:41:31.653Z",
-      "conversationDate": "2015-08-27",
+      "id": "9b6945185f0a0f5ae53979d1",
+      "createdOn": "2015-08-23T03:37:20.867Z",
+      "conversationDate": "2015-08-23",
       "lines": [
         {
           "text": "Wim, gij weet alles van die terugbetalingsreeksen-story e?",
@@ -1059,9 +1173,9 @@
   },
   {
     "conversation": {
-      "id": "6b284b22af05f14c925016a6",
-      "createdOn": "2015-09-03T16:09:13.173Z",
-      "conversationDate": "2015-09-03",
+      "id": "376d96b1ea1a45f47a40bfa6",
+      "createdOn": "2015-08-30T00:54:19.716Z",
+      "conversationDate": "2015-08-30",
       "lines": [
         {
           "text": "Seg, Kevin gaat geopereerd worden ofwat?",
@@ -1090,10 +1204,16 @@
   },
   {
     "conversation": {
-      "id": "480444e0d8be12304e82b257",
-      "createdOn": "2015-09-10T16:36:54.692Z",
-      "conversationDate": "2015-09-10",
+      "id": "5b4858c4d66f2e055ddcff88",
+      "createdOn": "2015-09-05T22:11:18.566Z",
+      "conversationDate": "2015-09-05",
       "lines": [
+        {
+          "text": "Na 1u40min naar het werk gereden te hebben",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ik heb 4 keer het nieuws gehoord.",
           "punchLine": false,
@@ -1132,9 +1252,9 @@
   },
   {
     "conversation": {
-      "id": "dba267a395eff79433881f89",
-      "createdOn": "2015-09-17T17:04:36.211Z",
-      "conversationDate": "2015-09-17",
+      "id": "e1f8c820e10cb858b1a6fb58",
+      "createdOn": "2015-09-12T19:28:17.415Z",
+      "conversationDate": "2015-09-12",
       "lines": [
         {
           "text": "Hoe werken die 1,2,3,4 upgrade scripts in Vennootschappen?",
@@ -1163,9 +1283,9 @@
   },
   {
     "conversation": {
-      "id": "e946c4139591f434033ef1b5",
-      "createdOn": "2015-09-24T17:32:17.730Z",
-      "conversationDate": "2015-09-24",
+      "id": "9a32bafe47f93b588ab03a25",
+      "createdOn": "2015-09-19T16:45:16.264Z",
+      "conversationDate": "2015-09-19",
       "lines": [
         {
           "text": "Amai, goed gegeten precies?",
@@ -1183,10 +1303,16 @@
   },
   {
     "conversation": {
-      "id": "eef7a512e6d05233c0319260",
-      "createdOn": "2015-10-01T17:59:59.250Z",
-      "conversationDate": "2015-10-01",
+      "id": "ab5ea2a7ace1e20fba063e0b",
+      "createdOn": "2015-09-26T14:02:15.113Z",
+      "conversationDate": "2015-09-26",
       "lines": [
+        {
+          "text": "Tim S vraagt aan Wim of hij scrum master wil zijn, waarna Wim vraagt wat hij in de plaats krijgt",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ge krijgt van mij een blauw doosje waarop staat Kevin en Valerie, 25-04-2015...",
           "punchLine": false,
@@ -1225,10 +1351,16 @@
   },
   {
     "conversation": {
-      "id": "204d4770ab28817850f8056b",
-      "createdOn": "2015-10-08T18:27:40.769Z",
-      "conversationDate": "2015-10-08",
+      "id": "95f3936d5072ccc711fda10d",
+      "createdOn": "2015-10-03T11:19:13.962Z",
+      "conversationDate": "2015-10-03",
       "lines": [
+        {
+          "text": "Terwijl Willem naar buiten gaat",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Hedde gij geen 5 minuten pauze nodig?",
           "punchLine": false,
@@ -1256,10 +1388,16 @@
   },
   {
     "conversation": {
-      "id": "8d8badfe7f4c8324566bddac",
-      "createdOn": "2015-10-15T18:55:22.288Z",
-      "conversationDate": "2015-10-15",
+      "id": "ad4df989099979ec051695cb",
+      "createdOn": "2015-10-10T08:36:12.811Z",
+      "conversationDate": "2015-10-10",
       "lines": [
+        {
+          "text": "Tim hoest een hoop snot en slijm op (longen uit het lijf zoals ze zeggen) terwijl Willem aka patient zero voorbij loopt",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Hier se jom *steekt middelvinger op*",
           "punchLine": true,
@@ -1276,10 +1414,16 @@
   },
   {
     "conversation": {
-      "id": "878e36669d58830346db2b21",
-      "createdOn": "2015-10-22T19:23:03.807Z",
-      "conversationDate": "2015-10-22",
+      "id": "eb4baf777a423540f0513964",
+      "createdOn": "2015-10-17T05:53:11.660Z",
+      "conversationDate": "2015-10-17",
       "lines": [
+        {
+          "text": "Jaak van STAID aan de telefoon",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Luister, als gij zegt 'breek da af', dan breek ik da af",
           "punchLine": false,
@@ -1307,10 +1451,16 @@
   },
   {
     "conversation": {
-      "id": "db725d69ad2f7d5e1bdfbf2c",
-      "createdOn": "2015-10-29T19:50:45.326Z",
-      "conversationDate": "2015-10-29",
+      "id": "3e46e87dfaa72c5b76656ed8",
+      "createdOn": "2015-10-24T03:10:10.509Z",
+      "conversationDate": "2015-10-24",
       "lines": [
+        {
+          "text": "Na 9 dagen aan een story voor E-Loket - New Dispensa gewerkt te hebben",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Jorgo, test zeker New Dispensa ook",
           "punchLine": false,
@@ -1338,10 +1488,16 @@
   },
   {
     "conversation": {
-      "id": "8499370635698331d99b6584",
-      "createdOn": "2015-11-05T20:18:26.846Z",
-      "conversationDate": "2015-11-05",
+      "id": "50e07b6ba78ae8b2440105c8",
+      "createdOn": "2015-10-31T00:27:09.358Z",
+      "conversationDate": "2015-10-31",
       "lines": [
+        {
+          "text": "Luc komt terug van griepvaccinatie",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ik had niet eens gevoeld dat em gespoten had",
           "punchLine": false,
@@ -1369,9 +1525,9 @@
   },
   {
     "conversation": {
-      "id": "091e446cd4e8a731bd88cafe",
-      "createdOn": "2015-11-12T20:46:08.365Z",
-      "conversationDate": "2015-11-12",
+      "id": "5dc9fea96983323e744023a1",
+      "createdOn": "2015-11-06T21:44:08.207Z",
+      "conversationDate": "2015-11-06",
       "lines": [
         {
           "text": "Wilt ge nu eens weten wat triestig is?",
@@ -1400,9 +1556,9 @@
   },
   {
     "conversation": {
-      "id": "876e9e82dda47f4adfb44b7d",
-      "createdOn": "2015-11-19T21:13:49.884Z",
-      "conversationDate": "2015-11-19",
+      "id": "950a61c6de27f8d49a80df5b",
+      "createdOn": "2015-11-13T19:01:07.056Z",
+      "conversationDate": "2015-11-13",
       "lines": [
         {
           "text": "Wij hebben trouwens ne nieuwe queue bijgemaakt!",
@@ -1431,10 +1587,16 @@
   },
   {
     "conversation": {
-      "id": "bf6e88d0c1789aa7e8807db5",
-      "createdOn": "2015-11-26T21:41:31.403Z",
-      "conversationDate": "2015-11-26",
+      "id": "f34cb8aa1e1c0c9d66f01045",
+      "createdOn": "2015-11-20T16:18:05.905Z",
+      "conversationDate": "2015-11-20",
       "lines": [
+        {
+          "text": "1 jaar na de feiten",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ah, er zijn 2 teams? Dat wist ik niet.",
           "punchLine": true,
@@ -1451,14 +1613,14 @@
   },
   {
     "conversation": {
-      "id": "6198ddec8569c52c93bfd7b4",
-      "createdOn": "2015-12-03T22:09:12.923Z",
-      "conversationDate": "2015-12-03",
+      "id": "3dc0ea4b6086cf0f45196084",
+      "createdOn": "2015-11-27T13:35:04.754Z",
+      "conversationDate": "2015-11-27",
       "lines": [
         {
           "text": "Jorgo aan telefoon",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1565,9 +1727,9 @@
   },
   {
     "conversation": {
-      "id": "548a990bdee74e86940d3471",
-      "createdOn": "2015-12-10T22:36:54.442Z",
-      "conversationDate": "2015-12-10",
+      "id": "ffeb6500fbc7385e838bbd49",
+      "createdOn": "2015-12-04T10:52:03.603Z",
+      "conversationDate": "2015-12-04",
       "lines": [
         {
           "text": "Beter scheef erin, dan recht erneffe  (parkeren)",
@@ -1585,9 +1747,66 @@
   },
   {
     "conversation": {
-      "id": "1a261eafaacd0380d7b35074",
-      "createdOn": "2015-12-17T23:04:35.961Z",
-      "conversationDate": "2015-12-17",
+      "id": "9e901e075b89815399be6e97",
+      "createdOn": "2015-12-11T08:09:02.452Z",
+      "conversationDate": "2015-12-11",
+      "lines": [
+        {
+          "text": "sightseeing trip van Willem op 17/11/2015",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "Tremelo - Aarschot (auto)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "Aarschot - Leuven - Brussel (trein)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "Brussel - Leuven - Landen (trein)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "Landen - Leuven (trein)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "Leuven - Aarschot (trein)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "Aarschot - Haasrode (auto)",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
+        {
+          "text": "Haasrode - Tremelo (auto)",
+          "punchLine": true,
+          "lineType": "CONTEXT",
+          "participants": []
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "4b58693ddad7d5b5aab76655",
+      "createdOn": "2015-12-18T05:26:01.301Z",
+      "conversationDate": "2015-12-18",
       "lines": [
         {
           "text": "En wat gaan jullie coaches doen vanzodra evaluaties gedaan zijn?",
@@ -1627,9 +1846,9 @@
   },
   {
     "conversation": {
-      "id": "19b5bf040ba2175d6e6fe94b",
-      "createdOn": "2015-12-24T23:32:17.480Z",
-      "conversationDate": "2015-12-24",
+      "id": "5aebb9dc4fba74253d7211bd",
+      "createdOn": "2015-12-25T02:43:00.150Z",
+      "conversationDate": "2015-12-25",
       "lines": [
         {
           "text": "Willem, we moeten u eens oranje verven, dan bent ge Willem van Oranje",

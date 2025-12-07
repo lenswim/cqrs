@@ -1,10 +1,16 @@
 [
   {
     "conversation": {
-      "id": "7880a6b09ee5bad696249c96",
+      "id": "9212bc81091525b471fbec12",
       "createdOn": "2016-01-01T00:00:00.000Z",
       "conversationDate": "2016-01-01",
       "lines": [
+        {
+          "text": "Ann haar telefoon gaat af en Tim DM doet de beltoon na.",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "ja, ge zijt wel vrij polymorph",
           "punchLine": false,
@@ -54,7 +60,7 @@
   },
   {
     "conversation": {
-      "id": "46468a6e7fa34744c5e652fc",
+      "id": "9fd5516c80f8eed27d777555",
       "createdOn": "2016-01-07T10:06:18.929Z",
       "conversationDate": "2016-01-07",
       "lines": [
@@ -118,7 +124,7 @@
   },
   {
     "conversation": {
-      "id": "007de425ed6343fe2b94e55d",
+      "id": "e00f170d611f791e8893a239",
       "createdOn": "2016-01-13T20:12:37.859Z",
       "conversationDate": "2016-01-13",
       "lines": [
@@ -149,7 +155,7 @@
   },
   {
     "conversation": {
-      "id": "d4b3c6288b052f907f73a930",
+      "id": "9c300b5c6d0aad65429d3a7b",
       "createdOn": "2016-01-20T06:18:56.789Z",
       "conversationDate": "2016-01-20",
       "lines": [
@@ -180,7 +186,7 @@
   },
   {
     "conversation": {
-      "id": "ce536ecffa44c489922b7df5",
+      "id": "b98072b50af2488898c9e177",
       "createdOn": "2016-01-26T16:25:15.719Z",
       "conversationDate": "2016-01-26",
       "lines": [
@@ -233,7 +239,7 @@
   },
   {
     "conversation": {
-      "id": "217aacd4099afa64c33bda79",
+      "id": "1b8a1dc69191ed70a51d315b",
       "createdOn": "2016-02-02T02:31:34.649Z",
       "conversationDate": "2016-02-02",
       "lines": [
@@ -286,7 +292,7 @@
   },
   {
     "conversation": {
-      "id": "ff56bc5a5018e176f4181e4f",
+      "id": "46e24a49dcaffb0f1d23e1ba",
       "createdOn": "2016-02-08T12:37:53.578Z",
       "conversationDate": "2016-02-08",
       "lines": [
@@ -328,7 +334,7 @@
   },
   {
     "conversation": {
-      "id": "f25514fa7b76b2ab4ede7454",
+      "id": "7c2aa405e34da6484dee3723",
       "createdOn": "2016-02-14T22:44:12.508Z",
       "conversationDate": "2016-02-14",
       "lines": [
@@ -348,10 +354,16 @@
   },
   {
     "conversation": {
-      "id": "2f1486dda34a8fa5a1835855",
+      "id": "39352641548c985b41ba6f82",
       "createdOn": "2016-02-21T08:50:31.438Z",
       "conversationDate": "2016-02-21",
       "lines": [
+        {
+          "text": "Accident gebeurd op de N19, bestuurder in slaap gevallen of dronken",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Als ge in slaap gevallen zijt dan bolt ge nog beetje vooruit",
           "punchLine": false,
@@ -377,7 +389,7 @@
         {
           "text": "Gieren",
           "punchLine": true,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         }
       ]
@@ -385,7 +397,7 @@
   },
   {
     "conversation": {
-      "id": "9ee75b3f9b04d940898955de",
+      "id": "1c536f2abdc7a8b840f04d1c",
       "createdOn": "2016-02-27T18:56:50.368Z",
       "conversationDate": "2016-02-27",
       "lines": [
@@ -416,10 +428,16 @@
   },
   {
     "conversation": {
-      "id": "a74242aadb651372a7bde733",
+      "id": "819e15c884f63a122358b2d6",
       "createdOn": "2016-03-05T05:03:09.298Z",
       "conversationDate": "2016-03-05",
       "lines": [
+        {
+          "text": "Wim en Kevin googlen over stenografie",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "allé, wa doet die naakte man nu hier?",
           "punchLine": false,
@@ -480,7 +498,7 @@
   },
   {
     "conversation": {
-      "id": "1c243ecd0ada62af3da7dff2",
+      "id": "31827e0bb5e956891cac0efa",
       "createdOn": "2016-03-11T15:09:28.228Z",
       "conversationDate": "2016-03-11",
       "lines": [
@@ -511,14 +529,14 @@
   },
   {
     "conversation": {
-      "id": "1a6917f1ba0ebf5bce82d1bc",
+      "id": "69e2864328a1c4cc0ff46270",
       "createdOn": "2016-03-18T01:15:47.157Z",
       "conversationDate": "2016-03-18",
       "lines": [
         {
           "text": "We zaten op de retro, stil moment",
           "punchLine": true,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         }
       ]
@@ -526,10 +544,16 @@
   },
   {
     "conversation": {
-      "id": "54af4eef8180cb300f157dad",
+      "id": "e6cd8e4b51767c3608fd0b86",
       "createdOn": "2016-03-24T11:22:06.087Z",
       "conversationDate": "2016-03-24",
       "lines": [
+        {
+          "text": "Tim komt terug van zijn gesprekje met Ilse",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "En Tim, 1000EUR opslag gekregen?",
           "punchLine": false,
@@ -568,10 +592,16 @@
   },
   {
     "conversation": {
-      "id": "82023c91648162e02237b3f9",
+      "id": "d8015c30bbde1e8fad958535",
       "createdOn": "2016-03-30T21:28:25.017Z",
       "conversationDate": "2016-03-30",
       "lines": [
+        {
+          "text": "Tim en Willem zijn aan het pairen",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Hey Tim, we hebben ffkes een expert nodig..",
           "punchLine": false,
@@ -610,10 +640,16 @@
   },
   {
     "conversation": {
-      "id": "f6847297a00e7b8e439c1c11",
+      "id": "2f202b24f1e79af2e8327d0d",
       "createdOn": "2016-04-06T07:34:43.947Z",
       "conversationDate": "2016-04-06",
       "lines": [
+        {
+          "text": "Tim probeert iets te vertellen terwijl hij ondertussen met zijn gsm bezig is",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Ik heb..",
           "punchLine": false,
@@ -663,10 +699,16 @@
   },
   {
     "conversation": {
-      "id": "64268b2024f7435f27b1675e",
+      "id": "f62b82c194d9e7853619f762",
       "createdOn": "2016-04-12T17:41:02.877Z",
       "conversationDate": "2016-04-12",
       "lines": [
+        {
+          "text": "Tim pairt met Willem en beiden staan plotseling recht",
+          "punchLine": false,
+          "lineType": "CONTEXT",
+          "participants": []
+        },
         {
           "text": "Amai, als jullie zitten valt dat niet op, maar als jullie rechtstaan is dat nogal een serieus hoogteverschil",
           "punchLine": false,
@@ -705,7 +747,7 @@
   },
   {
     "conversation": {
-      "id": "3815e6f0808c54bdadc16511",
+      "id": "f57e7edb38066f5bd7a1dea0",
       "createdOn": "2016-04-19T03:47:21.807Z",
       "conversationDate": "2016-04-19",
       "lines": [
@@ -736,7 +778,7 @@
   },
   {
     "conversation": {
-      "id": "109984aca3a27e819f2bd741",
+      "id": "3c4d7b33c4ec59f4a4e0cd6b",
       "createdOn": "2016-04-25T13:53:40.736Z",
       "conversationDate": "2016-04-25",
       "lines": [
@@ -767,7 +809,7 @@
   },
   {
     "conversation": {
-      "id": "19679bae941a744da62043e9",
+      "id": "225839b7138c992ee148b6a3",
       "createdOn": "2016-05-01T23:59:59.666Z",
       "conversationDate": "2016-05-01",
       "lines": [
@@ -798,7 +840,7 @@
   },
   {
     "conversation": {
-      "id": "63588bcfef9617165c77b9ba",
+      "id": "9e25cbf4a3d15308e5639532",
       "createdOn": "2016-05-08T10:06:18.596Z",
       "conversationDate": "2016-05-08",
       "lines": [
@@ -829,14 +871,14 @@
   },
   {
     "conversation": {
-      "id": "b74e2553c4eccea914df00fc",
+      "id": "8db17cc1abe0aa39e688f8b5",
       "createdOn": "2016-05-14T20:12:37.526Z",
       "conversationDate": "2016-05-14",
       "lines": [
         {
           "text": "Jean-Marie is water aan het opkuisen met keukenrol",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -855,14 +897,14 @@
   },
   {
     "conversation": {
-      "id": "59d04ac2852c3e43be7d161b",
+      "id": "fc26b8825e96908ef61bfd2a",
       "createdOn": "2016-05-21T06:18:56.456Z",
       "conversationDate": "2016-05-21",
       "lines": [
         {
           "text": "Tim S. en Wim zijn over Tinder en soortgelijke apps bezig",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -892,7 +934,7 @@
   },
   {
     "conversation": {
-      "id": "18420ee2e97807ca0aab35d1",
+      "id": "a32140a886cfb4f0880d7906",
       "createdOn": "2016-05-27T16:25:15.385Z",
       "conversationDate": "2016-05-27",
       "lines": [
@@ -923,14 +965,14 @@
   },
   {
     "conversation": {
-      "id": "8508e6c293b8f86e26aa1f94",
+      "id": "da1bd2dba07674c3ea06e302",
       "createdOn": "2016-06-03T02:31:34.315Z",
       "conversationDate": "2016-06-03",
       "lines": [
         {
           "text": "Tim S probeert toetsencombinaties die helemaal niets uithalen",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -960,7 +1002,7 @@
   },
   {
     "conversation": {
-      "id": "00e477ee57c230841a47815f",
+      "id": "b641533b1f0df50412c4b27e",
       "createdOn": "2016-06-09T12:37:53.245Z",
       "conversationDate": "2016-06-09",
       "lines": [
@@ -980,7 +1022,7 @@
   },
   {
     "conversation": {
-      "id": "30a600db9691d7283dcac2fc",
+      "id": "fdf9799ed11935cb89b39802",
       "createdOn": "2016-06-15T22:44:12.175Z",
       "conversationDate": "2016-06-15",
       "lines": [
@@ -1011,7 +1053,7 @@
   },
   {
     "conversation": {
-      "id": "799a95a31eb384d050031067",
+      "id": "8db2944760a9b9c688651e5c",
       "createdOn": "2016-06-22T08:50:31.105Z",
       "conversationDate": "2016-06-22",
       "lines": [
@@ -1053,7 +1095,7 @@
   },
   {
     "conversation": {
-      "id": "403d9ad043412649a485690a",
+      "id": "c452ec413d7e3948403c8fc3",
       "createdOn": "2016-06-28T18:56:50.035Z",
       "conversationDate": "2016-06-28",
       "lines": [
@@ -1084,7 +1126,7 @@
   },
   {
     "conversation": {
-      "id": "78a75a7705dd404b7e5640b0",
+      "id": "be334094f5c17843ad2af2bf",
       "createdOn": "2016-07-05T05:03:08.964Z",
       "conversationDate": "2016-07-05",
       "lines": [
@@ -1102,7 +1144,7 @@
         {
           "text": "Kleine discussie over swaffelen",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1152,13 +1194,13 @@
         {
           "text": "Tim S. swaffelt zen eigen met zijn bananenbrooddoos",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
           "text": "lachen gieren brullen",
           "punchLine": true,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         }
       ]
@@ -1166,7 +1208,7 @@
   },
   {
     "conversation": {
-      "id": "26e982c1716298cc7da811a5",
+      "id": "5e07054606be73c5ff92919a",
       "createdOn": "2016-07-11T15:09:27.894Z",
       "conversationDate": "2016-07-11",
       "lines": [
@@ -1184,7 +1226,7 @@
         {
           "text": "Wim zn hersenen gaan in overdrive...",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1203,14 +1245,14 @@
   },
   {
     "conversation": {
-      "id": "fdcb8bae3af4c1b88ddb057f",
+      "id": "4365ec396d1cbafaaecfa002",
       "createdOn": "2016-07-18T01:15:46.824Z",
       "conversationDate": "2016-07-18",
       "lines": [
         {
           "text": "Wim geeft 1 cent aan Kevin",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1229,14 +1271,14 @@
   },
   {
     "conversation": {
-      "id": "0570e6a23fbee9e9058b923a",
+      "id": "96a9e7fd18ba8fb777b272f1",
       "createdOn": "2016-07-24T11:22:05.754Z",
       "conversationDate": "2016-07-24",
       "lines": [
         {
           "text": "Annick en Veronique komen binnen 's morgens binnen",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1253,7 +1295,7 @@
         {
           "text": "lopen door",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1272,7 +1314,7 @@
   },
   {
     "conversation": {
-      "id": "f95e2b202cc5bcbb5788632b",
+      "id": "e12babe95f9f7ba82e87e611",
       "createdOn": "2016-07-30T21:28:24.684Z",
       "conversationDate": "2016-07-30",
       "lines": [
@@ -1303,7 +1345,7 @@
   },
   {
     "conversation": {
-      "id": "bd66a034b3fde639f431f143",
+      "id": "9f0f1ddfb7d7bde755ec2150",
       "createdOn": "2016-08-06T07:34:43.614Z",
       "conversationDate": "2016-08-06",
       "lines": [
@@ -1334,7 +1376,7 @@
   },
   {
     "conversation": {
-      "id": "7d9e48d1e71d80e1f47b0ea5",
+      "id": "65ea2288dc154a6a62ed5b0b",
       "createdOn": "2016-08-12T17:41:02.543Z",
       "conversationDate": "2016-08-12",
       "lines": [
@@ -1365,14 +1407,14 @@
   },
   {
     "conversation": {
-      "id": "74b1abdf57ab92f192f7e1e9",
+      "id": "3b4ff67d6ee611522ac7416f",
       "createdOn": "2016-08-19T03:47:21.473Z",
       "conversationDate": "2016-08-19",
       "lines": [
         {
           "text": "Vincent vertrekt bij Ventouris om te gaan stemmen",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1413,7 +1455,7 @@
   },
   {
     "conversation": {
-      "id": "e71582dd7b7bd7937ab823c6",
+      "id": "12e014257f099385521ad008",
       "createdOn": "2016-08-25T13:53:40.403Z",
       "conversationDate": "2016-08-25",
       "lines": [
@@ -1444,14 +1486,14 @@
   },
   {
     "conversation": {
-      "id": "e3c1c186e82763f77b00e910",
+      "id": "613986f52a23cd66d1a57eb6",
       "createdOn": "2016-08-31T23:59:59.333Z",
       "conversationDate": "2016-08-31",
       "lines": [
         {
           "text": "Tim S hoest ernstig",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1492,7 +1534,7 @@
   },
   {
     "conversation": {
-      "id": "408bdbd163fda48119e95b29",
+      "id": "95c8415941db7459e660ac70",
       "createdOn": "2016-09-07T10:06:18.263Z",
       "conversationDate": "2016-09-07",
       "lines": [
@@ -1567,14 +1609,14 @@
   },
   {
     "conversation": {
-      "id": "6e9c91a55eecc34d58595a1a",
+      "id": "f7ee9cf9a95239c168965295",
       "createdOn": "2016-09-13T20:12:37.192Z",
       "conversationDate": "2016-09-13",
       "lines": [
         {
           "text": "Gesprek over wanneer voor het eerst blijven slapen bij vriend/vriendin",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1615,14 +1657,14 @@
   },
   {
     "conversation": {
-      "id": "e1620ce7ef6be28a54136422",
+      "id": "15a1b51e78631f83bee12881",
       "createdOn": "2016-09-20T06:18:56.122Z",
       "conversationDate": "2016-09-20",
       "lines": [
         {
           "text": "Kim Ausloos komt naar Aaron gewandeld al glimlachend",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1663,14 +1705,14 @@
   },
   {
     "conversation": {
-      "id": "ee6d8db7158e9ad6b01f7bc3",
+      "id": "10f9c3b2aad596d11879c41d",
       "createdOn": "2016-09-26T16:25:15.052Z",
       "conversationDate": "2016-09-26",
       "lines": [
         {
           "text": "gesprek over verlofdagen",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -1799,7 +1841,7 @@
   },
   {
     "conversation": {
-      "id": "b27bf6e75098006d4946c651",
+      "id": "35282749e41794c7253c8372",
       "createdOn": "2016-10-03T02:31:33.982Z",
       "conversationDate": "2016-10-03",
       "lines": [
@@ -1852,7 +1894,7 @@
   },
   {
     "conversation": {
-      "id": "d8c056232bd029f53b57557b",
+      "id": "2de2f60bfaa90dc7ce2d5299",
       "createdOn": "2016-10-09T12:37:52.912Z",
       "conversationDate": "2016-10-09",
       "lines": [
@@ -1883,7 +1925,7 @@
   },
   {
     "conversation": {
-      "id": "00fa35913287188b13510c0c",
+      "id": "0b2f2b5dd67e082943310f41",
       "createdOn": "2016-10-15T22:44:11.842Z",
       "conversationDate": "2016-10-15",
       "lines": [
@@ -1903,7 +1945,7 @@
   },
   {
     "conversation": {
-      "id": "1b4eef381c8cf24464e5b118",
+      "id": "6d804c27828392f5cd5059b1",
       "createdOn": "2016-10-22T08:50:30.771Z",
       "conversationDate": "2016-10-22",
       "lines": [
@@ -1967,7 +2009,7 @@
   },
   {
     "conversation": {
-      "id": "523aa6e0b432cca24f45c651",
+      "id": "ede9fc612b3b71116e7d9b31",
       "createdOn": "2016-10-28T18:56:49.701Z",
       "conversationDate": "2016-10-28",
       "lines": [
@@ -1987,7 +2029,7 @@
   },
   {
     "conversation": {
-      "id": "74680965133d89f6ecfa7cfe",
+      "id": "31125ed45e5f78cf14800ebc",
       "createdOn": "2016-11-04T05:03:08.631Z",
       "conversationDate": "2016-11-04",
       "lines": [
@@ -2040,14 +2082,14 @@
   },
   {
     "conversation": {
-      "id": "34a6368f0a15e1affa1b414c",
+      "id": "50144fa3a1dd9390bb30a2ea",
       "createdOn": "2016-11-10T15:09:27.561Z",
       "conversationDate": "2016-11-10",
       "lines": [
         {
           "text": "Willem stelt zich kandidaat om Tim S te helpen met de hotfix",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2077,14 +2119,14 @@
   },
   {
     "conversation": {
-      "id": "e393646d976ce96149d66070",
+      "id": "5c2c565417a210218ce2c936",
       "createdOn": "2016-11-17T01:15:46.491Z",
       "conversationDate": "2016-11-17",
       "lines": [
         {
           "text": "We zitten buiten naar de hogeschoolstudenten te kijken achter het hek",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2125,14 +2167,14 @@
   },
   {
     "conversation": {
-      "id": "03ab8d1ce9feec74dcb40e20",
+      "id": "2e8b1463bf18655763ef77d1",
       "createdOn": "2016-11-23T11:22:05.421Z",
       "conversationDate": "2016-11-23",
       "lines": [
         {
           "text": "Tim DM deelt kleine kaartjes uit met refactoring ideeen",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2162,14 +2204,14 @@
   },
   {
     "conversation": {
-      "id": "180711902690657f78dd7684",
+      "id": "d53af263c92fc45bf43e7ce3",
       "createdOn": "2016-11-29T21:28:24.350Z",
       "conversationDate": "2016-11-29",
       "lines": [
         {
           "text": "Tijdens het Aurelia-projectje voor de exploration days",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2219,7 +2261,7 @@
         {
           "text": "Insert trollface",
           "punchLine": true,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         }
       ]
@@ -2227,14 +2269,14 @@
   },
   {
     "conversation": {
-      "id": "a5b5c3141786112b2405e13f",
+      "id": "a57624059da0bc8aaceab37e",
       "createdOn": "2016-12-06T07:34:43.280Z",
       "conversationDate": "2016-12-06",
       "lines": [
         {
           "text": "Kevin stelt een vraag aan Wim, waarop Wim correct antwoord geeft",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2264,20 +2306,20 @@
   },
   {
     "conversation": {
-      "id": "e3c2dc7c9ab26190fe32b34d",
+      "id": "26a8bc03f71c172af4e2635f",
       "createdOn": "2016-12-12T17:41:02.210Z",
       "conversationDate": "2016-12-12",
       "lines": [
         {
           "text": "Tim S moet 4 keer achter elkaar niezen",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
           "text": "Kevin doet teken van \"glug glug\"",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2305,13 +2347,13 @@
         {
           "text": "Na een korte pauze om te denken of Kevin dat nu serieus meende, schoot iedereen keihard in de lach",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
           "text": "Kevin googled wat het verband is tussen niezen en drank",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2328,7 +2370,7 @@
         {
           "text": "Iedereen lacht verder, maar gewoon harder",
           "punchLine": true,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         }
       ]
@@ -2336,14 +2378,14 @@
   },
   {
     "conversation": {
-      "id": "2f6ad133959e7d10a9fe1ec1",
+      "id": "76e5489b37f54e0fcc861e4b",
       "createdOn": "2016-12-19T03:47:21.140Z",
       "conversationDate": "2016-12-19",
       "lines": [
         {
           "text": "Opzoekwerk rond Agalev (nu GROEN) aan de gang",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2371,7 +2413,7 @@
         {
           "text": "Na wat opzoekwerk bleek inderdaad dat ze in politiek zat",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2423,20 +2465,20 @@
   },
   {
     "conversation": {
-      "id": "b5af13142fc7beae2034a9eb",
+      "id": "0446b3c9d21593a678c20a03",
       "createdOn": "2016-12-25T13:53:40.070Z",
       "conversationDate": "2016-12-25",
       "lines": [
         {
           "text": "Tom J. komt om half 8 's ochtends binnen, normaal groet Wim Tom altijd met 'Ah ge komt toch nog'",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
           "text": "Tom gniffelt en Wim zegt niks",
           "punchLine": false,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         },
         {
@@ -2486,7 +2528,7 @@
         {
           "text": "Jm begint super hard te lachen",
           "punchLine": true,
-          "lineType": "ACTION",
+          "lineType": "CONTEXT",
           "participants": []
         }
       ]

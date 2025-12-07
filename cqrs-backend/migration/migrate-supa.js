@@ -40,7 +40,7 @@ function parseConversation(lines) {
       parsed.push({
         text: line.replace(/\*/g, "").trim(),
         punchLine: false,
-        lineType: "ACTION",
+        lineType: "CONTEXT",
         participants: []
       });
       continue;
