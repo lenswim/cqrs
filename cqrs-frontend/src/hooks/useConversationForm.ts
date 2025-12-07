@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { LineType, Participant } from "../types/types";
+import { supabase } from "../util/supabase";
 
 export interface LineData {
   text: string;
@@ -31,8 +32,10 @@ export function useConversationForm(onSuccess?: () => void) {
   };
 
   const handleSubmit = async () => {
-    const payload = {
+    const conversationData = {
+      id: crypto.randomUUID(),
       conversationDate: conversationDate || null,
+      createdOn: new Date().toISOString(),
       lines: lines.map(l => ({
         text: l.text,
         lineType: l.lineType,
@@ -42,19 +45,15 @@ export function useConversationForm(onSuccess?: () => void) {
     };
 
     try {
-      const base = (import.meta.env.VITE_API_URL as string) ?? "http://localhost:8080";
-      const res = await fetch(`${base}/conversations`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const { error } = await supabase
+        .from("conversations")
+        .insert([{ conversation: conversationData }]);
 
-      if (!res.ok) {
-        throw new Error(await res.text());
+      if (error) {
+        throw new Error(error.message);
       }
-      const created = await res.json();
-      console.log("created", created);
-      // reset if desired
+
+      console.log("created", conversationData);
       if (onSuccess) {
         onSuccess();
       }
