@@ -1,72 +1,65 @@
 import { useState, useEffect } from "react";
 import type {Conversation, Punchline} from "../types/types";
+import { supabase } from "../util/supabase";
+
 
 export function useConversationList() {
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [selectedParticipants, setSelectedParticipants] = useState<string[]>([]);
   const [selectedYears, setSelectedYears] = useState<number[]>([]);
+  
+
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    let mounted = true;
 
+    const fetchAll = async () => {
+      const { data, error } = await supabase
+        .from("conversations")
+        .select("*")
+        .overrideTypes<Conversation[]>();
 
-      const API_BASE_URL = import.meta.env.VITE_API_URL;
+      if (!mounted) return;
+      if (error) {
+        setError(error.message);
+        return
+      }
 
-      fetch(`${API_BASE_URL}/conversations`)
-          .then(response => response.json())
-          .then(data => setConversations(data))
-          .catch(error => {
-              console.error("Failed to fetch conversations:", error);
-          });
+      const normalized = (data ?? []).map(item => {
+        const convo = item.conversation;
+        return {
+          ...convo,
+          lines: typeof convo.lines === 'string' ? JSON.parse(convo.lines) : convo.lines
+        };
+      });
 
+      console.log("Fetched conversations:", data);
+      setConversations(normalized);
+      setLoading(false);
+    };
 
+    fetchAll();
 
-      // Stubbed response instead of fetch - would be replaced with actual API call
-    // setConversations([
-    //   {
-    //     id: "1",
-    //     conversationDate: "2025-11-15",
-    //     createdOn: "2025-11-15T19:47:37",
-    //     lines: [
-    //       {
-    //         punchLine: false,
-    //         lineType: "CONTEXT",
-    //         text: "Kevin moet geopereerd worden aan zijn sinussen.",
-    //         participants: [],
-    //       },
-    //       {
-    //         punchLine: false,
-    //         lineType: "SPEECH",
-    //         text: "Kevin moet geopereerd worden ofwa?",
-    //         participants: [{ victim: false, name: "Ann" }],
-    //       },
-    //       {
-    //         punchLine: true,
-    //         lineType: "SPEECH",
-    //         text: "Ja, ze gaan zn kop amputeren!",
-    //         participants: [{ victim: false, name: "Wim" }],
-    //       }
-    //     ]
-    //   },
-    //   {
-    //     id: "2",
-    //     conversationDate: "2024-11-15",
-    //     createdOn: "2024-11-15T19:47:37",
-    //     lines: [
-    //       {
-    //         punchLine: false,
-    //         lineType: "SPEECH",
-    //         text: "Wat is een beer?",
-    //         participants: [{ victim: false, name: "Tim" }],
-    //       },
-    //       {
-    //         punchLine: true,
-    //         lineType: "SPEECH",
-    //         text: "Dat is zoals nen hond, maar echt veel groter",
-    //         participants: [{ victim: false, name: "Wim" }],
-    //       }
-    //     ]
-    //   }
-    // ]);
+    const subscription = supabase
+      .channel("realtime-conversations")
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "conversations" },
+        async () => {
+          // guard and set loading from an external callback (allowed)
+          if (!mounted) return;
+          setLoading(true);
+          await fetchAll();
+        }
+      )
+      .subscribe();
+
+    return () => {
+      mounted = false;
+      subscription.unsubscribe();
+    };
   }, []);
 
   const allParticipants = Array.from(
@@ -141,6 +134,8 @@ export function useConversationList() {
     toggleParticipantFilter,
     toggleYearFilter,
     clearFilters,
-      allPunchlines
+    allPunchlines,
+    loading,
+    error,
   };
 }

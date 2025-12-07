@@ -1,0 +1,1670 @@
+[
+  {
+    "conversation": {
+      "id": "51a950a5f79c86b5402945f7",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-01-01",
+      "lines": [
+        {
+          "text": "Zit daar iemand in de auto?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ah nee, dat ben ik in de raam",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "68f725ecd50ac21b61f8908e",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-01-08",
+      "lines": [
+        {
+          "text": "*veeg* *veeg*",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "*blaas*, (fluh, halve rochel), kut!",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "*veeg* *veeg*",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "a13f2d96aedb18f6e9eea3cd",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-01-15",
+      "lines": [
+        {
+          "text": "Schieten en wegwezen",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "ad6591bbd280bc2f0c9a7b6b",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-01-22",
+      "lines": [
+        {
+          "text": "Erlend en ik hebben gisteren uitgezocht wat we vorige sprint eigelijk gedaan hebben",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "82471631068e6fb1e67c5ce4",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-01-29",
+      "lines": [
+        {
+          "text": "Zullen we aan de retro beginnen?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Linus",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "nu al?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Een premature retro, typisch mannelijk eigelijk e",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "f765e3125395c250abd16b64",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-02-05",
+      "lines": [
+        {
+          "text": "Waar is de Dirk Lens als ge hem nodig hebt ?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "f2fe11f4b99d75807207dba3",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-02-12",
+      "lines": [
+        {
+          "text": "\"Gij zijt een klein klootzakske é gij !\"",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "ac26a9392235b0270d5b7a41",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-02-19",
+      "lines": [
+        {
+          "text": "Vindt ge niet dat Rob er hier (wijst naar de foto) slimmer uitziet?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Da komt omdat ge hem daar niet hoort praten",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "e7c0ec1ea80ae20fa8e265d9",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-02-26",
+      "lines": [
+        {
+          "text": "*roept* Wie ziet er het mannelijkst uit binnen Ventouris? Lenne..en dan Jorgo..EN AL DE REST ZIJN FUCKING PUSSIES!",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Mag het? Wij zijn wel over ons haar bezig",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "574981103ce0c8141135dc10",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-03-05",
+      "lines": [
+        {
+          "text": "Ik weet niet...ik heb tot nu toe slechte ervaring met Mac",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Stond 'em wel aan?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "610f8566dd64fde1a8ed309c",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-03-12",
+      "lines": [
+        {
+          "text": "Hallo?..Hallo?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "andere persoon legt af",
+          "punchLine": false,
+          "lineType": "ACTION",
+          "participants": []
+        },
+        {
+          "text": "Da's zo ne faggot e.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "c4262febe1a728a268d96720",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-03-19",
+      "lines": [
+        {
+          "text": "Zit ge erin?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Erlend",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ja, ik zit erin..... (Nee, niet in de quotes e!!)",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "cf6ae439564dddb63cc4bf27",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-03-26",
+      "lines": [
+        {
+          "text": "Onze schermen zijn niet groot genoeg voor deze code",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "9d8831c1800e4ca2245e99a4",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-04-02",
+      "lines": [
+        {
+          "text": "... Stoor ik?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "80338aa9268aa2b51e9eb8ab",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-04-09",
+      "lines": [
+        {
+          "text": "..en er staat ook iets in gegraveerd",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Watte?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "GTA-cheatcodes",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "c5b89ce9ecff46fff7a728ae",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-04-16",
+      "lines": [
+        {
+          "text": "Ik zie er het nut nie van in, maar als u da nuttig lijkt wil ik da wel doen",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tanguy",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "71036a51ba151dd783388bb5",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-04-23",
+      "lines": [
+        {
+          "text": "Gaat gij naar Cegeka in the cloud",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Nee",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Wim gaat wel denk ik e?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ik ben Wim.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "f2c7a7b4c96265ed8d67d960",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-04-30",
+      "lines": [
+        {
+          "text": "Hey Kevin, kom eens aan mijn linkerhand trekken..",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "4ee230b49eef068e8d492335",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-05-07",
+      "lines": [
+        {
+          "text": "Hey en wat is uw paswoord?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ge moet gewoon zorgen dat die nie in slaapstand gaat",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tanguy",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Oke, dan zal ik over uw muis blijven wrijven",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "0c3b5a84b73495f756991b2a",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-05-14",
+      "lines": [
+        {
+          "text": "Ik heb laatst (*in maart*) een mail zien passeren over vervangen van winterbanden, maar wanneer moet ge da juist doen?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "ba3ae04dc5f45668e35d23d1",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-05-21",
+      "lines": [
+        {
+          "text": "Boem! Hier is de query, hij werkt maar hij doet niks.",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Een beetje zoals Kevin, haha.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "1ea33936e2cc9ffc4e712c0a",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-05-28",
+      "lines": [
+        {
+          "text": "Jaja, events jom...",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Daar zit iets in wa gij nie bent e",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "huh, wat dan?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "een vent e",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Oooohw snap!",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim en Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "689c80f57f483e321c1e28bc",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-06-04",
+      "lines": [
+        {
+          "text": "Weet ge wat suuuperfrustrerend is?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Da ik knapper ben dan u?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "f795780a8e380fb608af8634",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-06-11",
+      "lines": [
+        {
+          "text": "Dan kunt ge uw 'guns' showen",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ik heb maar 1 'gun' *knipoog*",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "5525892c13eadb094e781af6",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-06-18",
+      "lines": [
+        {
+          "text": "Is Lieve naar huis?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Precies wel ja",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "87e0a8385980900d968ffcad",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-06-25",
+      "lines": [
+        {
+          "text": "Wat doet deze method hier, verminderOfVerwijder?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Dat is ne method.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Luc",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "d020eaa3be3743944af31621",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-07-02",
+      "lines": [
+        {
+          "text": "Onvoltooid verleden tijd. dat is ook iets wat ik niet snap: wat is daar nu onvoltooid aan? Hoe kan dat, iets onvoltooid in het verleden..",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "e7f2427240ebe18a53046ddc",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-07-09",
+      "lines": [
+        {
+          "text": "De fout is gefixed, ik ben nu met iets anders bezig.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob zijn mail",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "9ab41c7abadb55dee7b22de7",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-07-16",
+      "lines": [
+        {
+          "text": "Ge gaat die leuk vinden, da's een hele toffe",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Luc",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Da zeide ze over Wim Lens ook",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "1a5d02bd13f832a7e691c249",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-07-23",
+      "lines": [
+        {
+          "text": "'Weinig volk' was eigenlijk meer 'weinig volk'. Dus ja, er is weinig volk.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "ecb9dcb1d23d8f14ea5940ef",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-07-30",
+      "lines": [
+        {
+          "text": "Kent ge da liedje van Samson en Gert, roeien?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Hoe gaat da?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "(al zingend) Roeien!",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "fbcce9cbe2dc8c76d7386f25",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-08-06",
+      "lines": [
+        {
+          "text": "..en na de ontwikkeling, gaat het story-document naar de vuilbak?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Klant",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "bwah, naar sharepoint. Komt op hetzelfde neer.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Vincent",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "c3a512a5b080a2cd77ac97b8",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-08-13",
+      "lines": [
+        {
+          "text": "Als ik hier straks nog iets van weet, dan hang ik mezelf op!",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "20090e1c5aad51fe45881c60",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-08-20",
+      "lines": [
+        {
+          "text": "Ik ga een pokémon als (kanban)avatar nemen, HOE VET IS DA WEL NIE?!",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "0c29ed5c79fff600dc1a20e4",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-08-27",
+      "lines": [
+        {
+          "text": "Wim, gij weet alles van die terugbetalingsreeksen-story e?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Bart",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Nie echt, ik weet alleen iets van die group by query..",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ideaal, want die query is kapot.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Bart",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "a94d6c7cb617062a55003ee3",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-09-03",
+      "lines": [
+        {
+          "text": "Seg, Kevin gaat geopereerd worden ofwat?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ann",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ja, ze gaan zijn kop amputeren.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "6ae97f5555e3fb5d1d8021e1",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-09-10",
+      "lines": [
+        {
+          "text": "Ik heb 4 keer het nieuws gehoord.",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "En was er iets interessants?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ja, er is 4 keer een boot gezonken.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "2aa25d0856646fd6aa2d0eeb",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-09-17",
+      "lines": [
+        {
+          "text": "Hoe werken die 1,2,3,4 upgrade scripts in Vennootschappen?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "1 komt voor 2, 2 komt voor 3 en 3 komt voor 4.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ann",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "8d814951273af797dd76e9ba",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-09-24",
+      "lines": [
+        {
+          "text": "Amai, goed gegeten precies?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "aa4c548f511cd5defd184c33",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-10-01",
+      "lines": [
+        {
+          "text": "Ge krijgt van mij een blauw doosje waarop staat Kevin en Valerie, 25-04-2015...",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Er staat nog iets op geschreven...",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "(die met zn rug naar het doosje zit) Dat is een einddatum denk ik.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "504c7a2ab60dfa28384121c2",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-10-08",
+      "lines": [
+        {
+          "text": "Hedde gij geen 5 minuten pauze nodig?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ik heb 5 jaar pauze nodig.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "3fec098af46b37d93d197314",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-10-15",
+      "lines": [
+        {
+          "text": "Hier se jom *steekt middelvinger op*",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "56f687a4f1b0679f30dce73e",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-10-22",
+      "lines": [
+        {
+          "text": "Luister, als gij zegt 'breek da af', dan breek ik da af",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jaak",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Als gij zegt 'breek da niet af', dan doe ik niks.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jaak",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "6967a7c4cc2438db717e92ff",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-10-29",
+      "lines": [
+        {
+          "text": "Jorgo, test zeker New Dispensa ook",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Wat is New Dispensa?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "4f03b833709d46bb1613fd88",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-11-05",
+      "lines": [
+        {
+          "text": "Ik had niet eens gevoeld dat em gespoten had",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Luc",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "That's what she said!",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "0e270c7d2f68b4b71b19a74c",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-11-12",
+      "lines": [
+        {
+          "text": "Wilt ge nu eens weten wat triestig is?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Wa? Uw huwelijk?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "ac41b3bdd71d8602e2426be9",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-11-19",
+      "lines": [
+        {
+          "text": "Wij hebben trouwens ne nieuwe queue bijgemaakt!",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ja sgoed, daar word ge voor betaald é",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "0156da7b08991282314ae245",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-11-26",
+      "lines": [
+        {
+          "text": "Ah, er zijn 2 teams? Dat wist ik niet.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Louis",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "da928595ef72666d476f4fa2",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-12-03",
+      "lines": [
+        {
+          "text": "Jorgo aan telefoon",
+          "punchLine": false,
+          "lineType": "ACTION",
+          "participants": []
+        },
+        {
+          "text": "(van RSVZ) ok, geef mij eens het insz-nummer",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Hamza",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "ok, 860..",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "uhu",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Hamza",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "...913..",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "913",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Hamza",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "..069",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "hehehe",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Hamza",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "hehehe",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "snul",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "184f3d24ee61f5eebb5e3d7d",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-12-10",
+      "lines": [
+        {
+          "text": "Beter scheef erin, dan recht erneffe  (parkeren)",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "51a3096141139e4f5e4191e9",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-12-17",
+      "lines": [
+        {
+          "text": "En wat gaan jullie coaches doen vanzodra evaluaties gedaan zijn?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tim D.",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Goh, ik heb nog geen idee hoe ik da leeg gat ga vullen...",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ik heb de oplossing om uw leeg gat te vullen",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Vincent",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "b82d9ddd05f547b58b98337a",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2015-12-24",
+      "lines": [
+        {
+          "text": "Willem, we moeten u eens oranje verven, dan bent ge Willem van Oranje",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Daar kunt ge wel dood van gaan é",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Willem",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Pssh! Da's nie bewezen.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

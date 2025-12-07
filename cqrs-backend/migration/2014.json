@@ -1,0 +1,394 @@
+[
+  {
+    "conversation": {
+      "id": "5eee3cc4d5ff27e238a67eb1",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-01-01",
+      "lines": [
+        {
+          "text": "snapt gij iets van deze mail? Tekste en elipsen en shit",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jorgo",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "6448e7f0bb4ffcb4660c3160",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-01-29",
+      "lines": [
+        {
+          "text": "Weet gij waar Veronique Coninx is?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Zit die niet tegenover u?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ann",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ah, Heeej :)",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "c7653c6ec7cf2c18602e4eb8",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-02-26",
+      "lines": [
+        {
+          "text": "Ik ga trouwen",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Da's begin van het einde e",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ruben",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "c49ce96b0b50ec979ce9dfc0",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-03-26",
+      "lines": [
+        {
+          "text": "Hebt ge het aangepast ofwa?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Tom",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Hoe? Moest ik iets aanpassen?",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Jannick",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "51bf8195b55aac464d55b8e5",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-04-23",
+      "lines": [
+        {
+          "text": "*vragende blik* da ne nieuwe plant ginder?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Dieje? Neeee!",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Hmmm...",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "06d8dce79f2ee862b6886d02",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-05-21",
+      "lines": [
+        {
+          "text": "Luister eens goed..",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": ".... wa moet ik horen?",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "niks, veel lawaai :)",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "ff262ceb380fd5bb56b6e273",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-06-18",
+      "lines": [
+        {
+          "text": "Blijf van mn banaan af e",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Rob",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "7904c30b510b1c490bb7fab8",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-07-16",
+      "lines": [
+        {
+          "text": "Hatchie!!",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ruben",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Buh, fucking ebola",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ruben",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "a2432e64bb482326b2a99b6f",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-08-13",
+      "lines": [
+        {
+          "text": "Hik.... Hik...",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Kevin",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ja Kevin is een beetje kapot.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ruben",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "d5d5f66b509f71082a7ad7cb",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-09-10",
+      "lines": [
+        {
+          "text": "Het is in orde, buiten het feit dat het niet werkt",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Ruben",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "aec812ae562c496194650f21",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-10-08",
+      "lines": [
+        {
+          "text": "Nu ge hier toch zit, ga ik u heel efkes misbruiken",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lenne",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "5445ff50e68cea25a6f60e70",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-11-05",
+      "lines": [
+        {
+          "text": "(aan telefoon) Hallo met Johan... Ja ik heb een jeansbroek aan.",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Lybaert",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "conversation": {
+      "id": "8e2fe4af1a9f876bdbb351cb",
+      "createdOn": "2025-12-07T14:31:30.989Z",
+      "conversationDate": "2014-12-03",
+      "lines": [
+        {
+          "text": "Ik had zo ne maat...",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ah nee wie was da nu weer?...",
+          "punchLine": false,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        },
+        {
+          "text": "Ahja, mijn mama was da!",
+          "punchLine": true,
+          "lineType": "SPEECH",
+          "participants": [
+            {
+              "name": "Wim",
+              "victim": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
