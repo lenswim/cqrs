@@ -15,10 +15,6 @@ function extractYear(filename) {
   return match ? match[1] : null;
 }
 
-function todayISO() {
-  return new Date().toISOString();
-}
-
 function getDatesForYear(year, count) {
   const dates = [];
   const start = new Date(`${year}-01-01T00:00:00Z`).getTime();
@@ -108,7 +104,7 @@ function migrate(folderPath) {
   const allFiles = fs.readdirSync(folderPath).filter(f => f.endsWith(".txt"));
   const groups = {};
 
-  // Group by year
+  // Group files by year
   for (const file of allFiles) {
     const year = extractYear(file);
     if (!year) {
@@ -119,18 +115,14 @@ function migrate(folderPath) {
     groups[year].push(file);
   }
 
-  const createdOn = todayISO();
-
   for (const year of Object.keys(groups)) {
     const files = groups[year];
-
     let allConversations = [];
 
-    // Parse all txt files of this year
+    // Parse all conversations from all files of the year
     for (const file of files) {
       const fullPath = path.join(folderPath, file);
       const txt = fs.readFileSync(fullPath, "utf8");
-
       const blocks = splitIntoConversations(txt);
 
       for (const block of blocks) {
@@ -143,23 +135,28 @@ function migrate(folderPath) {
       console.log(`Processed ${file} (${blocks.length} blocks)`);
     }
 
-    // Create unique dates
+    // Unique spaced dates for this year
     const dates = getDatesForYear(year, allConversations.length);
 
-    // ✨ Wrap conversation object inside "conversation" JSONB field
-    const outputData = allConversations.map((lines, i) => ({
-      conversation: {
-        id: uuid(),
-        createdOn,
-        conversationDate: dates[i].toISOString().split("T")[0],
-        lines
-      }
-    }));
+    // ✨ createdOn and conversationDate are the SAME value now
+    const outputData = allConversations.map((lines, i) => {
+      const dateISO = dates[i].toISOString();
 
+      return {
+        conversation: {
+          id: uuid(),
+          createdOn: dateISO,
+          conversationDate: dateISO.split("T")[0],
+          lines
+        }
+      };
+    });
+
+    // Save JSON for this year
     const output = path.join(folderPath, `${year}.json`);
     fs.writeFileSync(output, JSON.stringify(outputData, null, 2));
 
-    console.log(`\n✔ Created ${output} (${outputData.length} conversations)\n`);
+    console.log(`\n✔ Created ${output} with ${outputData.length} conversations\n`);
   }
 }
 

@@ -19,6 +19,7 @@ export function useConversationList() {
       const { data, error } = await supabase
         .from("conversations")
         .select("*")
+        .order("conversation->createdOn", { ascending: false })
         .overrideTypes<Conversation[]>();
 
       if (!mounted) return;
