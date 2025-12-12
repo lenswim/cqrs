@@ -40,6 +40,7 @@ export function MobileMenu() {
         borderRadius="6px"
         _hover={{ bg: theme.background.tertiary }}
         transition={transitions.fast}
+        color={theme.text.primary}
       >
         ☰
       </Box>
