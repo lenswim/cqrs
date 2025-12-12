@@ -218,7 +218,7 @@ export default function ListQuotes() {
             <Flex gap={6} align="start">
                 {/* Filters Sidebar */}
                 <Box
-                    w={{ base: '100%', md: '220px' }}
+                    w={{ base: '25%', md: '220px' }}
                     flexShrink={0}
                     position={{ base: 'relative', md: 'sticky' }}
                     top={{ md: '80px' }}

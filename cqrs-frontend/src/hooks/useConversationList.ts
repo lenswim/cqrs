@@ -71,7 +71,7 @@ export function useConversationList() {
         )
       )
     )
-  );
+  ).sort((a, b) => a.localeCompare(b));
 
   const allPunchlines : Punchline[] = Array.from(
       new Set(
