@@ -3,6 +3,8 @@ import { useTheme } from '../contexts/ThemeContext';
 import { lightTheme, darkTheme, stylePresets, responsivePadding, responsiveSpacing } from '../styles/theme';
 import { useConversationList } from '../hooks';
 import { useStatistics } from '../hooks/useStatistics';
+import { Chart, useChart } from '@chakra-ui/charts';
+import {Bar, BarChart, XAxis, YAxis} from 'recharts';
 
 function StatCard({
   title,
@@ -49,6 +51,54 @@ function StatCard({
           </Text>
         </Box>
       </Flex>
+    </Box>
+  );
+}
+
+
+function ChartCard({
+  title,
+  data,
+  color,
+  icon,
+}: {
+  title: string;
+  data: Array<{ participant: string; count: number }>;
+  color: string;
+  icon: string;
+}) {
+  const { mode } = useTheme();
+  const theme = mode === 'light' ? lightTheme : darkTheme;
+
+  return (
+    <Box
+      bg={theme.background.card}
+      borderRadius="12px"
+      p={responsivePadding}
+      border="1px solid"
+      borderColor={theme.border.light}
+      boxShadow={theme.shadow.sm}
+    >
+      <Flex align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
+        <Text fontSize="24px">{icon}</Text>
+        <Text fontSize="18px" fontWeight="700" color={theme.text.primary}>
+          {title}
+        </Text>
+      </Flex>
+
+      <VStack align="stretch" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
+          <BarChart
+            width={400}
+            height={250}
+            data={data}
+            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+          >
+            <XAxis dataKey="participant" stroke={theme.text.secondary} />
+            <YAxis stroke={theme.text.secondary} />
+            <Bar dataKey="count" fill={color} />
+          </BarChart>
+      </VStack>
+
     </Box>
   );
 }
@@ -131,6 +181,7 @@ export default function Statistics() {
   const { conversations } = useConversationList();
   const stats = useStatistics(conversations);
 
+
   return (
     <Box {...stylePresets.pageContainer}>
       <Text {...stylePresets.pageTitle} color={theme.text.primary}>
@@ -174,16 +225,17 @@ export default function Statistics() {
       <SimpleGrid columns={{ base: 1, lg: 2 }} 
         gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} 
         mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
-        <LeaderboardCard
+        
+        <ChartCard
           title="Top Punchline Deliverers"
-          items={stats.participantStats.map(p => ({
-            name: p.name,
+          data={stats.participantStats.map(p => ({
+            participant: p.name,
             count: p.punchlineCount
-          }))}
+          })).slice(0, 5)}
           icon="⚡"
-          metric="punchlines"
           color={theme.stats.punchlines}
         />
+        
         <LeaderboardCard
           title="Most Victimized"
           items={stats.participantStats
@@ -198,51 +250,6 @@ export default function Statistics() {
           color={theme.stats.victim}
         />
       </SimpleGrid>
-
-      {/* All Participants */}
-      <Box
-        bg={theme.background.card}
-        borderRadius="12px"
-        p={responsivePadding}
-        border="1px solid"
-        borderColor={theme.border.light}
-        boxShadow={theme.shadow.sm}
-      >
-        <Flex align="center" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
-          <Text fontSize="24px">👥</Text>
-          <Text fontSize="18px" fontWeight="700" color={theme.text.primary}>
-            All Participants
-          </Text>
-        </Flex>
-
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
-          {stats.participantStats.map((participant) => (
-            <Box
-              key={participant.name}
-              p={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}
-              bg={theme.background.tertiary}
-              borderRadius="8px"
-              border="1px solid"
-              borderColor={theme.border.light}
-            >
-              <Text fontSize="15px" fontWeight="700" color={theme.text.primary} mb={2}>
-                {participant.name}
-              </Text>
-              <Flex gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} fontSize="12px">
-                <Text color={theme.text.secondary}>
-                  ⚡ {participant.punchlineCount}
-                </Text>
-                <Text color={theme.text.secondary}>
-                  🎯 {participant.victimCount}
-                </Text>
-                <Text color={theme.text.secondary}>
-                  💬 {participant.appearanceCount}
-                </Text>
-              </Flex>
-            </Box>
-          ))}
-        </SimpleGrid>
-      </Box>
     </Box>
   );
 }
