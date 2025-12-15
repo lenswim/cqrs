@@ -3,8 +3,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import { lightTheme, darkTheme, stylePresets, responsivePadding, responsiveSpacing } from '../styles/theme';
 import { useConversationList } from '../hooks';
 import { useStatistics } from '../hooks/useStatistics';
-import { Chart, useChart } from '@chakra-ui/charts';
-import {Bar, BarChart, XAxis, YAxis} from 'recharts';
+import { BarList, type BarListData, useChart } from "@chakra-ui/charts"
 
 function StatCard({
   title,
@@ -55,12 +54,11 @@ function StatCard({
   );
 }
 
-
-function ChartCard({
+function BarListCard({
   title,
   data,
-  color,
   icon,
+  color
 }: {
   title: string;
   data: Array<{ participant: string; count: number }>;
@@ -68,7 +66,12 @@ function ChartCard({
   icon: string;
 }) {
   const { mode } = useTheme();
-  const theme = mode === 'light' ? lightTheme : darkTheme;
+  const theme = mode === 'light' ? lightTheme : darkTheme; 
+  const chart = useChart<BarListData>({
+    data: data.map(item => ({ name: item.participant, value: item.count })),
+    series: [{ name: "name", color: color }],
+  });
+
 
   return (
     <Box
@@ -87,20 +90,17 @@ function ChartCard({
       </Flex>
 
       <VStack align="stretch" gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
-          <BarChart
-            width={400}
-            height={250}
-            data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-          >
-            <XAxis dataKey="participant" stroke={theme.text.secondary} />
-            <YAxis stroke={theme.text.secondary} />
-            <Bar dataKey="count" fill={color} />
-          </BarChart>
+          <BarList.Root chart={chart}>
+        <BarList.Content>
+          <BarList.Bar />
+          <BarList.Value color={theme.text.primary} />
+        </BarList.Content>
+      </BarList.Root>
       </VStack>
 
     </Box>
   );
+
 }
 
 function LeaderboardCard({
@@ -226,7 +226,7 @@ export default function Statistics() {
         gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }} 
         mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.desktop }}>
         
-        <ChartCard
+        <BarListCard
           title="Top Punchline Deliverers"
           data={stats.participantStats.map(p => ({
             participant: p.name,
