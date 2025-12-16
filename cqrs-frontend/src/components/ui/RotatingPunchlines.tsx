@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { useTheme } from '../../contexts/ThemeContext';
 import { lightTheme, darkTheme } from '../../styles/theme';
 import {useConversationList} from "../../hooks";
 import type {Punchline} from "../../types/types.ts";
-import { Blockquote, Circle, Float } from "@chakra-ui/react"
-import { LuQuote } from "react-icons/lu"
 
 
 const ROTATION_INTERVAL = 4000; // 4 seconds
@@ -53,28 +51,24 @@ export function RotatingPunchlines() {
         transition={`opacity ${FADE_DURATION}ms ease-in-out`}
         maxW="800px"
       >
-
-        <Blockquote.Root colorPalette="blue" ps="8">
-          <Float placement="middle-start">
-            <Circle bg={theme.text.accent} size="8" color="white">
-              <LuQuote />
-            </Circle>
-          </Float>
-          <Blockquote.Content cite={currentPunchline.author}
-            fontSize="28px"
-            fontWeight="600"
-            color={theme.text.primary}
-            fontStyle="italic"
-            lineHeight="1.4"
-            mb={3}>
-            {currentPunchline.text}
-          </Blockquote.Content>
-          <Blockquote.Caption fontSize="14px"
-            color={theme.text.accent}
-            fontWeight="600">
-            — <cite>{currentPunchline.author}</cite>
-          </Blockquote.Caption>
-        </Blockquote.Root>
+    <Text
+          fontSize="28px"
+          fontWeight="600"
+          color={theme.text.primary}
+          fontStyle="italic"
+          lineHeight="1.4"
+          mb={3}
+        >
+          "{currentPunchline.text}"
+        </Text>
+        <Text
+          fontSize="14px"
+          color={theme.text.accent}
+          fontWeight="600"
+        >
+          — {currentPunchline.author}
+        </Text>
+    
       </Box>
     </Box>
   );

@@ -4,7 +4,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Copy only package files for better caching
-COPY package.json package-lock.json ./
+COPY package*.json ./
 
 # Install dependencies
 RUN npm ci
@@ -25,7 +25,7 @@ COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/dist ./dist
 
 # Install vite for preview (needed to serve the built app)
-RUN npm ci --omit=dev && npm install vite
+RUN npm install vite
 
 EXPOSE 4173
 
