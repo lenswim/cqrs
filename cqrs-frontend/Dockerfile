@@ -25,7 +25,7 @@ COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/dist ./dist
 
 # Install vite for preview (needed to serve the built app)
-RUN npm install vite
+RUN npm ci --omit=dev && npm install vite
 
 EXPOSE 4173
 
