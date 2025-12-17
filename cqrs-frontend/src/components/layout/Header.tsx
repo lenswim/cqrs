@@ -2,6 +2,7 @@ import { Flex, Text } from '@chakra-ui/react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { lightTheme, darkTheme, spacing, transitions, responsivePadding, responsiveSpacing } from '../../styles/theme';
 import { MobileMenu } from './MobileMenu';
+import { AuthButton } from '../ui/authButton';
 
 export function Header() {
   const { mode, toggleTheme } = useTheme();
@@ -29,6 +30,8 @@ export function Header() {
       </Text>
 
       {/* Theme Toggle */}
+      
+      <AuthButton />
       <Flex
         align="center"
         gap={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}

@@ -50,6 +50,7 @@ export function Sidebar() {
     { icon: '🔍', label: 'Browse Quotes', path: '/listQuotes' },
     { icon: '✨', label: 'Add Quote', path: '/newQuote' },
     { icon: '📊', label: 'Statistics', path: '/statistics' },
+    { icon: '🔐', label: 'Log-in', path: '/login' },
   ];
 
   return (

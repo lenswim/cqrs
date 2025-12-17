@@ -6,6 +6,7 @@ import MainPage from "./pages/MainPage";
 import NewQuote from "./pages/NewQuote";
 import ListQuotes from "./pages/ListQuotes";
 import Statistics from "./pages/Statistics";
+import AuthPage from "./pages/Login";
 import { Toaster, createToaster, ToastRoot, ToastTitle, ToastDescription, ToastCloseTrigger } from "@chakra-ui/react";
 import { useMemo } from "react";
 
@@ -21,6 +22,7 @@ export default function App() {
                         <Route path="/newQuote" element={<NewQuote />} />
                         <Route path="/listQuotes" element={<ListQuotes />} />
                         <Route path="/statistics" element={<Statistics />} />
+                        <Route path="/login" element={<AuthPage />} />
                     </Routes>
                     <Toaster toaster={toaster}>
                         {(toast) => (
