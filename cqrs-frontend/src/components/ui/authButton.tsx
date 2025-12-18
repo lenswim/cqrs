@@ -23,7 +23,7 @@ export function AuthButton() {
   }
 
   return (
-    <Button onClick={handleClick} variant="outline" color={theme.text.secondary}>
+    <Button onClick={handleClick} variant="outline" color={theme.text.secondary} margin={8}>
       {user ? "Log out" : "Log in"}
     </Button>
   );

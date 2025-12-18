@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Box, Button, Input, Stack, Text } from "@chakra-ui/react";
 import { supabase } from "../util/supabase";
 import { useTheme } from '../contexts/ThemeContext';
-import { lightTheme, darkTheme} from '../styles/theme';
+import { lightTheme, darkTheme, stylePresets} from '../styles/theme';
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -26,11 +26,14 @@ const theme = mode === 'light' ? lightTheme : darkTheme;
 
   return (
     <Box maxW="sm" mx="auto" mt="20">
-      {sent ? (
-        <Text color={theme.text.secondary}>Check your email for the login link.</Text>
-      ) : (
+      {sent 
+      ? (<Text color={theme.text.secondary}>Check your email for the login link.</Text>) 
+      : (
         <form onSubmit={handleSubmit}>
           <Stack gap="4">
+            <Text {...stylePresets.pageTitle} color={theme.text.primary}>
+                                    Enter e-mail to log in
+                                </Text>
             <Input
               placeholder="Email"
               value={email}
