@@ -9,6 +9,7 @@ import Statistics from "./pages/Statistics";
 import AuthPage from "./pages/Login";
 import { Toaster, createToaster, ToastRoot, ToastTitle, ToastDescription, ToastCloseTrigger } from "@chakra-ui/react";
 import { useMemo } from "react";
+import ProtectedRoute from "./hooks/protectedRoute";
 
 export default function App() {
     const toaster = useMemo(() => createToaster({ placement: "top" }), []);
@@ -19,10 +20,18 @@ export default function App() {
                 <Layout>
                     <Routes>
                         <Route path="/" element={<MainPage />} />
-                        <Route path="/newQuote" element={<NewQuote />} />
+                        
                         <Route path="/listQuotes" element={<ListQuotes />} />
                         <Route path="/statistics" element={<Statistics />} />
                         <Route path="/login" element={<AuthPage />} />
+
+                        <Route path="/newQuote" element={
+                            <ProtectedRoute>
+                                <NewQuote />
+                            </ProtectedRoute>
+                         }
+                        />
+
                     </Routes>
                     <Toaster toaster={toaster}>
                         {(toast) => (
