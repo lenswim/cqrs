@@ -1,0 +1,23 @@
+name: Publish ADR
+on:
+  push:
+    branches:
+      - main # Trigger on push to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      
+      - run: npm install
+      - run: npx log4brains build --base-path /<repo-name>/ # Replace with your repo name
+      
+      - name: Deploy to GH Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .log4brains/out # The default output folder

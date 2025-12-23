@@ -1,0 +1,5 @@
+project:
+  name: cqrs
+  tz: Europe/Brussels
+  adrFolder: ./docs/adr
+  packages: []
