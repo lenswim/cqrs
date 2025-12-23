@@ -14,6 +14,14 @@ jobs:
           node-version: 18
       
       - run: npm install
+      
+      - name: Build Log4brains
+        # We add 'mkdir -p' just in case, and 'ls' to debug
+        run: |
+          npx log4brains build --base-path /${{ github.event.repository.name }}/
+          echo "Checking build output directory..."
+          ls -R .log4brains/out
+      
       - run: npx log4brains build --base-path /${{ github.event.repository.name }}/ # Replace with your repo name
       
       - name: Deploy to GH Pages
@@ -21,3 +29,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .log4brains/out # The default output folder
+          nojekyll: true
