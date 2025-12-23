@@ -24,21 +24,23 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Install Log4brains
-        run: npm install -g log4brains
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build ADR site
-        run: log4brains build
+        run: npx log4brains build
 
-      - name: Debug output (important)
+      - name: Debug build output
         run: |
-          echo "Contents of out/:"
-          ls -la out
+          echo "Listing .log4brains:"
+          ls -la .log4brains
+          echo "Listing .log4brains/out:"
+          ls -la .log4brains/out
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: out
+          FOLDER: .log4brains/out
           CLEAN: true
