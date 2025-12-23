@@ -43,24 +43,26 @@ export function ConversationCard({ conversation }: ConversationCardProps) {
         <Box>
           {conversation.lines.map((line, idx) => (
             <Box key={idx} mb={2}>
-              {line.lineType === 'CONTEXT' ? (
-                <Text fontSize="18px" color={theme.text.muted} fontStyle="italic" lineHeight="1.6">
-                  {line.text}
-                </Text>
-              ) : (
-                <Text
-                  fontSize="16px"
-                  color={theme.text.primary}
-                  lineHeight="1.6"
-                >
-                  {line.participants && line.participants.length > 0 && (
-                    <Text as="span" fontSize="11px" color={theme.text.accent} fontWeight="600" mr={2}>
-                      {line.participants.map(p => p.name).join(', ')}:
-                    </Text>
-                  )}
-                  {line.text}
-                </Text>
-              )}
+              {line.lineType === 'CONTEXT'
+                ? (
+                  <Text fontSize="18px" color={theme.text.muted} fontStyle="italic" lineHeight="1.6">
+                    {line.text}
+                  </Text>
+                )
+                : (
+                  <Text
+                    fontSize="16px"
+                    color={theme.text.primary}
+                    lineHeight="1.6"
+                  >
+                    {line.participants && line.participants.length > 0 && (
+                      <Text as="span" fontSize="16px" color={theme.text.accent} fontWeight="600" mr={2}>
+                        {line.participants.map(p => p.name).join(', ')}:
+                      </Text>
+                    )}
+                    {line.text}
+                  </Text>
+                )}
             </Box>
           ))}
         </Box>
