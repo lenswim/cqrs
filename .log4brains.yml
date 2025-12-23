@@ -3,3 +3,4 @@ project:
   tz: Europe/Brussels
   adrFolder: ./docs/adr
   packages: []
+  baseUrl: /cqrs/
