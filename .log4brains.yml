@@ -1,5 +1,4 @@
 project:
-  name: cqrs
-  tz: Europe/Brussels
+  name: CQRS Project ADRs
+  tz: Europe/Paris # Adjust to your timezone
   adrFolder: ./docs/adr
-  packages: []
