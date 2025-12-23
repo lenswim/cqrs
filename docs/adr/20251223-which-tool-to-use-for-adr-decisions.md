@@ -1,8 +1,7 @@
 # Which tool to use for ADR decisions
 
-- Status: [accepted]
-- Deciders: [list everyone involved in the decision] <!-- optional -->
-- Date: [2025-12-23 when the decision was last updated] <!-- optional. To customize the ordering without relying on Git creation dates and filenames -->
+- Status: accepted
+- Date: 2025-12-22
 - Tags: [adr documentation log4brains] <!-- optional -->
 
 ## Context and Problem Statement

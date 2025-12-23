@@ -1,8 +1,7 @@
 # Which database to use?
 
-- Status: [accepted]
-- Deciders: [list everyone involved in the decision] 
-- Date: [2025-12-02]
+- Status: accepted
+- Date: 2025-12-02
 - Tags: [database mongodb supabase postgres]
 
 ## Context and Problem Statement
