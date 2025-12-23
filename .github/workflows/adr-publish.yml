@@ -16,13 +16,14 @@ jobs:
       - run: npm install
       
       - name: Build Log4brains
-        run: npx log4brains build
-      
-      - name: Verify Build Output
-        run: ls -R .log4brains/out # If this fails, the build didn't work
+        run: |
+          mkdir -p .log4brains/out
+          
+          npx log4brains build
         
-      - run: npx log4brains build --base-path /${{ github.event.repository.name }}/ # Replace with your repo name
-      
+          echo "Checking .log4brains contents:"
+          ls -a .log4brains
+
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
