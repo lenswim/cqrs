@@ -2,7 +2,7 @@
 
 - Status: accepted
 - Date: 2025-12-02
-- Tags: [database mongodb supabase postgres]
+- Tags: database mongodb supabase postgres
 
 ## Context and Problem Statement
 
