@@ -1,4 +1,4 @@
-name: Deploy ADRs
+name: Build and Deploy Docs
 on:
   push:
     branches: [ main ]
@@ -9,25 +9,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # IMPORTANT: v1.1.0 needs history for the timeline
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: website/package-lock.json
+
+      - name: Install Dependencies
+        run: |
+          npm install -g log4brains@1.1.0
+          cd website && npm install
 
       - name: Build Log4brains
+        # The basePath must match the URL path: /repo-name/folder/
         run: |
-          # Install the specific version you're using
-          npm install -g log4brains@1.1.0
-          # The repo name is usually the sub-path. 
-          # Use your actual repo name here (e.g., /cqrs-experiment)
-          log4brains build --basePath /${{ github.event.repository.name }}
+          log4brains build --basePath /cqrs/adr
+          mkdir -p website/static/adr
+          cp -r .log4brains/out/* website/static/adr/
+
+      - name: Build Docusaurus
+        run: |
+          cd website
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.log4brains/out
+          # Docusaurus output is always in the /build folder of the site dir
+          publish_dir: ./website/build 
           nojekyll: true
-          clean: true

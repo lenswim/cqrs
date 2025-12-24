@@ -292,4 +292,16 @@ psd
 thumb
 sketch
 
+# Docusaurus build output
+website/build/
+website/.docusaurus/
+
+# Log4brains build output (both locations)
+.log4brains/out/
+website/static/adr/
+
+# Dependencies
+node_modules/
+website/node_modules/
+
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,node,react

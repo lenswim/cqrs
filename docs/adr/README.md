@@ -2,7 +2,7 @@
 
 ADRs are automatically published to our Log4brains architecture knowledge base:
 
-🔗 **<http://INSERT-YOUR-LOG4BRAINS-URL>**
+🔗 **[Browse the ADR Timeline](http://INSERT-YOUR-LOG4BRAINS-URL)**
 
 Please use this link to browse them.
 

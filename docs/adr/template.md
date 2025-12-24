@@ -1,6 +1,6 @@
 # [short title of solved problem and solution]
 
-- Status: [draft | proposed | rejected | accepted | deprecated | … | superseded by [xxx](yyyymmdd-xxx.md)] <!-- optional -->
+- Status: [draft | proposed | rejected | accepted | deprecated | … | superseded by insert link here <!-- optional -->
 - Deciders: [list everyone involved in the decision] <!-- optional -->
 - Date: [YYYY-MM-DD when the decision was last updated] <!-- optional. To customize the ordering without relying on Git creation dates and filenames -->
 - Tags: [space and/or comma separated list of tags] <!-- optional -->
@@ -69,5 +69,5 @@ Chosen option: "[option 1]", because [justification. e.g., only option, which me
 
 ## Links <!-- optional -->
 
-- [Link type](link to adr) <!-- example: Refined by [xxx](yyyymmdd-xxx.md) -->
+- [Link type](link to adr) <!-- example: Refined by insesrt link here -->
 - … <!-- numbers of links can vary -->
