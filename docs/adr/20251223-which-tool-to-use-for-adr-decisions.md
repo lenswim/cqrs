@@ -2,13 +2,13 @@
 
 - Status: accepted
 - Date: 2025-12-22
-- Tags: adr documentation log4brains
+- Tags: adr, documentation, log4brains
 
 ## Context and Problem Statement
 
 How to keep track of design decisions?
 
-## Decision Drivers <!-- optional -->
+## Decision Drivers
 
 - should be close to the code
 - should be searchable
