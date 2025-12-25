@@ -2,7 +2,7 @@
 
 - Status: accepted
 - Date: 2025-12-22
-- Tags: adr, documentation, log4brains
+- Tags: adr,documentation,log4brains
 
 ## Context and Problem Statement
 
