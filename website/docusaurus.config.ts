@@ -35,6 +35,18 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        docsDir: "../docs", // Points to your root docs folder
+        docsRouteBasePath: "docs",
+        indexBlog: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
