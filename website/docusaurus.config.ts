@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CQRS Documentation',
+  tagline: 'Capture and relive the best conversations. Never let a great quote slip away.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -73,9 +73,9 @@ const config: Config = {
       items: [
     {
       type: 'doc',
-      docId: 'adr/index', // Points to /docs/adr/index.md if it exists
+      docId: 'intro', // Points to /docs/adr/index.md if it exists
       position: 'left',
-      label: 'ADR List',
+      label: 'Documentation',
     },
     {
       // This links to the beautiful Log4brains UI we built into /static
@@ -92,25 +92,21 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Documentation',
               to: '/docs/intro',
+            },
+            {
+              label: 'ADR',
+              to: 'pathname:///cqrs/adr/',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'CQRS Application',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'CQRS',
+              href: 'https://cqrs-frontend.onrender.com/',
             },
           ],
         },
@@ -123,12 +119,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/lenswim/cqrs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CQRS, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
