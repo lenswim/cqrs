@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'CQRS Documentation',
   tagline: 'Capture and relive the best conversations. Never let a great quote slip away.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -136,7 +136,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CQRS, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CQRS, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -4,5 +4,13 @@
   },
   "dependencies": {
     "log4brains": "^1.1.0"
-  }
+  },
+  "scripts": {
+  "clean": "rm -rf .log4brains/out website/build website/static/adr",
+  "adr:build": "npx log4brains build --basePath /cqrs/adr",
+  "adr:copy": "mkdir -p website/static/adr && cp -r .log4brains/out/* website/static/adr/",
+  "docs:build": "cd website && npm run build",
+  "docs:serve": "cd website && npm run serve",
+  "serve-docs": "npm run clean && npm run adr:build && npm run adr:copy && npm run docs:build && npm run docs:serve"
+}
 }
