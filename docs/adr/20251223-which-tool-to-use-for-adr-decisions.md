@@ -16,13 +16,12 @@ How to keep track of design decisions?
 
 ## Considered Options
 
-- [log4brains](https://github.com/thomvaill/log4brains)
-- [adr-manager](https://github.com/adr/adr-manager)
+- [Log4brains](https://github.com/thomvaill/log4brains): architecture knowledge base (command-line + static site generator)
+- [ADR Tools](https://github.com/npryce/adr-tools): command-line to create ADRs
+- [ADR Tools Python](https://bitbucket.org/tinkerer_/adr-tools-python/src/master/): command-line to create ADRs
+- [adr-viewer](https://github.com/mrwilson/adr-viewer): static site generator
+- [adr-log](https://adr.github.io/adr-log/): command-line to create a TOC of ADRs
 
 ## Decision Outcome
 
 Chosen option: log4brains,  because it is close to the code, searchable, supports multiple projects and has a human-readable form.
-
-The other one was an online tool to connect to github. 
-
-Not really a fan of that one
