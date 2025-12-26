@@ -6,21 +6,27 @@ We have a free account on render that points to a github repo and contains a run
 
 Here is a diagram, because diagrams are cool.
 
-```mermaid
-flowchart LR
-    User[User / Browser]
+<details>
+    <summary>
+        Click here to see a diagram
+    </summary>
 
-    GitHub[GitHub Repository]
-    Render[Render Hosting]
-    ReactApp[React Frontend]
-    Supabase["Supabase BaaS (Database)"]
+    ```mermaid
+        flowchart LR
+            User[User / Browser]
 
-    User -->|Uses app| ReactApp
-    GitHub -->|Deploys from| Render
-    Render -->|Hosts| ReactApp
-    ReactApp -->|API calls| Supabase
-    Supabase -->|Data & Auth responses| ReactApp
+            GitHub[GitHub Repository]
+            Render[Render Hosting]
+            ReactApp[React Frontend]
+            Supabase["Supabase BaaS (Database)"]
+
+            User -->|Uses app| ReactApp
+            GitHub -->|Deploys from| Render
+            Render -->|Hosts| ReactApp
+            ReactApp -->|API calls| Supabase
+            Supabase -->|Data & Auth responses| ReactApp
 ```
+</details>
 
 
 
