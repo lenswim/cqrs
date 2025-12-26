@@ -1,0 +1,91 @@
+---
+sidebar_position: 1
+---
+
+import { useState } from 'react';
+
+export const PopupButton = () => {
+  const [show, setShow] = useState(false);
+
+  return (
+    <div>
+      <button
+        style={{
+          padding: '0.5rem 1rem',
+          borderRadius: '6px',
+          border: 'none',
+          cursor: 'pointer',
+          backgroundColor: 'var(--ifm-color-primary)',
+          color: 'var(--ifm-color-primary-contrast)',
+        }}
+        onClick={() => setShow(true)}
+      >
+        Show Pop-up
+      </button>
+
+      {show && (
+        <div>
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              width: '100vw',
+              height: '100vh',
+              background: 'rgba(0,0,0,0.4)',
+              zIndex: 999,
+            }}
+            onClick={() => setShow(false)}
+          />
+          <div
+            style={{
+              position: 'fixed',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              padding: '2rem',
+              backgroundColor: 'var(--ifm-color-body)',
+              color: 'var(--ifm-font-color-base)',
+              border: '1px solid var(--ifm-color-emphasis-300)',
+              borderRadius: '8px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+              zIndex: 1000,
+              minWidth: '250px',
+              textAlign: 'center',
+            }}
+          >
+            <p>Haha, snul!</p>
+            <button
+              style={{
+                marginTop: '1rem',
+                padding: '0.5rem 1rem',
+                borderRadius: '6px',
+                border: 'none',
+                cursor: 'pointer',
+                backgroundColor: 'var(--ifm-color-primary)',
+                color: 'var(--ifm-color-primary-contrast)',
+              }}
+              onClick={() => setShow(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+# Hello
+
+Welcome to the CQRS documentation.
+
+This documentation was built using [Docusaurus](https://docusaurus.io/).
+
+Docusaurus let's you write md or mdx files.
+
+[Mdx](https://mdxjs.com/) lets you use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
+
+Like this:
+
+<PopupButton />
