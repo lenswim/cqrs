@@ -2,7 +2,6 @@ import { useState } from "react";
 import type { LineType, Participant } from "../types/types";
 import { supabase } from "../util/supabase";
 import conversationSchema from "../schemas/conversationSchema";
-import { z, ZodError } from "zod";
 
 export interface LineData {
   text: string;
