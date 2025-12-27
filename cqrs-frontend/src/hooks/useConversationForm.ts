@@ -1,6 +1,8 @@
 import { useState } from "react";
 import type { LineType, Participant } from "../types/types";
 import { supabase } from "../util/supabase";
+import conversationSchema from "../schemas/conversationSchema";
+import { z, ZodError } from "zod";
 
 export interface LineData {
   text: string;
@@ -9,7 +11,7 @@ export interface LineData {
   participants: Participant[];
 }
 
-export function useConversationForm(onSuccess?: () => void) {
+export function useConversationForm(onSuccess?: () => void, onFailure?: (message?: string) => void) {
   const [conversationDate, setConversationDate] = useState("");
   const [lines, setLines] = useState<LineData[]>([
     { text: "", lineType: "SPEECH" as LineType, punchLine: false, participants: [] },
@@ -34,7 +36,7 @@ export function useConversationForm(onSuccess?: () => void) {
   const handleSubmit = async () => {
     const conversationData = {
       id: crypto.randomUUID(),
-      conversationDate: conversationDate || null,
+      conversationDate: conversationDate || "",
       createdOn: new Date().toISOString(),
       lines: lines.map(l => ({
         text: l.text,
@@ -43,6 +45,17 @@ export function useConversationForm(onSuccess?: () => void) {
         participants: l.participants.map(p => ({ name: p.name, victim: !!p.victim })),
       })),
     };
+
+    const result = conversationSchema.safeParse(conversationData);
+
+    if (!result.success) {
+      const errors = result.error.issues
+      .map(err => `${err.path.join(" → ") || "field"}: ${err.message}`)
+      .join("\n");
+
+      if (onFailure) onFailure(errors);
+      return;
+    }
 
     try {
       const { error } = await supabase
