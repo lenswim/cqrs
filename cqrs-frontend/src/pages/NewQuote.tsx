@@ -25,6 +25,19 @@ export default function NewQuote() {
             },
         });
     };
+
+    const handleError = (message?: string) => {
+        toaster.create({
+            title: "Invalid quote input!",
+            description: (
+                <Box whiteSpace="pre-line">
+                    {message || "Your conversation was not saved."}
+                </Box>
+            ),
+            type: "error",
+            duration: 3000,
+        });
+    };
     
     const {
         conversationDate,
@@ -33,7 +46,7 @@ export default function NewQuote() {
         handleLineChange,
         addLine,
         handleSubmit,
-    } = useConversationForm(handleSuccess);
+    } = useConversationForm(handleSuccess, handleError);
 
     return (
         <Box {...stylePresets.pageContainer}>
