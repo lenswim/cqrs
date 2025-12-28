@@ -29,13 +29,12 @@ const corsHeaders = {
 };
 
 serve(async (req) => {
-  // Handle CORS preflight
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
   }
 
   try {
-    // 1. Simple Secret Verification (Optional Hobby Security)
+    
     const secret = req.headers.get("x-app-secret");
     if (secret !== Deno.env.get("FUNCTION_SECRET")) {
       return new Response(JSON.stringify({ error: "Unauthorized" }), { 
@@ -46,7 +45,7 @@ serve(async (req) => {
 
     const body = await req.json();
 
-    // 2. Server-Side Validation
+    
     const result = conversationSchema.safeParse(body);
     if (!result.success) {
       return new Response(JSON.stringify({ error: result.error.format() }), { 
@@ -55,7 +54,6 @@ serve(async (req) => {
       });
     }
 
-    // 3. Database Insert using Service Role (Bypasses RLS)
     const supabase = createClient(
       Deno.env.get("SUPABASE_URL")!,
       Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
@@ -63,7 +61,7 @@ serve(async (req) => {
 
     const { error } = await supabase
       .from("conversations")
-      .insert([{ conversation: result.data }]); // Ensure column name matches your DB
+      .insert([{ conversation: result.data }]);
 
     if (error) throw error;
 
