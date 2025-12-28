@@ -33,16 +33,12 @@ export default conversationSchema;
 
 You can use this schema to validate the data and capture the errrors:
 ```ts
-```ts
 const result = conversationSchema.safeParse(conversationData);
-```
 ```
 
 ## Frontend
 
 In the frontend this validation is done before submitting the new quote form.
-
-
 
 ## Backend
 
