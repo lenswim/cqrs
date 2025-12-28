@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { LineType, Participant } from "../types/types";
-import { supabase } from "../util/supabase";
+import { supabase, URL, FUNCTION_SECRET } from "../util/supabase";
 import conversationSchema from "../schemas/conversationSchema";
 
 export interface LineData {
@@ -57,20 +57,26 @@ export function useConversationForm(onSuccess?: () => void, onFailure?: (message
     }
 
     try {
-      const { error } = await supabase
-        .from("conversations")
-        .insert([{ conversation: conversationData }]);
+      const res = await fetch(
+        `${URL}/functions/v1/create-conversation`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-app-secret": FUNCTION_SECRET,
+          },
+          body: JSON.stringify(conversationData),
+        }
+      );
 
-      if (error) {
-        throw new Error(error.message);
+      if (!res.ok) {
+        const errData = await res.json();
+        throw new Error(errData.error || "Server error");
       }
 
-      console.log("created", conversationData);
-      if (onSuccess) {
-        onSuccess();
-      }
-    } catch (err) {
-      console.error("submit failed", err);
+      onSuccess?.();
+    } catch (err: any) {
+      onFailure?.(err.message);
     }
   };
 
