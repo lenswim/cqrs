@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { LineType, Participant } from "../types/types";
-import { supabase, URL, FUNCTION_SECRET } from "../util/supabase";
+import { URL, FUNCTION_SECRET } from "../util/supabase";
 import conversationSchema from "../schemas/conversationSchema";
 
 export interface LineData {
