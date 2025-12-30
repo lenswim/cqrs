@@ -2,7 +2,7 @@ import ForceGraph2D from "react-force-graph-2d";
 import { useConversationList } from '../hooks';
 import { useSocialWeb } from '../hooks';
 import { useTheme } from '../contexts/ThemeContext';
-import { lightTheme, darkTheme, stylePresets, responsivePadding, responsiveSpacing } from '../styles/theme';
+import { lightTheme, darkTheme } from '../styles/theme';
 
 export type Node = { id: string };
 export type Link = { source: string; target: string, count: number };

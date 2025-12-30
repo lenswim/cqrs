@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import type { Conversation, Line } from '../types/types';
+import type { Conversation } from '../types/types';
 import { type Node, type Link }  from "../pages/Social";
 
 export interface SocialWeb {
