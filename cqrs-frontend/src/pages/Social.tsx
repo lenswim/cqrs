@@ -1,61 +1,83 @@
-import ForceGraph2D from "react-force-graph-2d";
-import { useMemo } from "react";
-import { useConversationList } from "../hooks";
-import { useSocialWeb } from "../hooks";
-import { useTheme } from "../contexts/ThemeContext";
-import { lightTheme, darkTheme } from "../styles/theme";
+import { useConversationList } from '../hooks';
+import { useSocialWeb } from '../hooks';
+import { useTheme } from '../contexts/ThemeContext';
+import { lightTheme, darkTheme } from '../styles/theme';
+import ForceGraph3D from 'react-force-graph-3d';
+import * as THREE from 'three';
+import { useMemo } from 'react';
 
 export type Node = { id: string };
-export type Link = { source: string; target: string; count: number };
+export type Link = { source: string; target: string, count: number };
 
-export default function SocialGraph() {
-  const { conversations } = useConversationList();
-  const socialWeb = useSocialWeb(conversations);
+export default function SocialGraph3D() {
+    const { conversations } = useConversationList();
+    const socialWeb = useSocialWeb(conversations);
 
-  const nodes = socialWeb.nodes;
-  const links = socialWeb.links;
+    const nodes = socialWeb.nodes;
+    const links = socialWeb.links;
 
-  const { mode } = useTheme();
-  const currentTheme = mode === "light" ? lightTheme : darkTheme;
+    const { mode } = useTheme();
+    const theme = mode === 'light' ? lightTheme : darkTheme;
 
-  // Build a color map: assign each node a unique color
-  const colorMap = useMemo(() => {
-    const map = new Map<string, string>();
-    nodes.forEach((node, index) => {
-      const hue = (index / nodes.length) * 360; // distribute across HSL hue
-      map.set(node.id, `hsl(${hue}, 70%, 50%)`);
-    });
-    return map;
-  }, [nodes]);
 
-  return (
-    <div style={{ height: "600px", width: "100%" }}>
-      <ForceGraph2D
-        graphData={{ nodes, links }}
-        backgroundColor={currentTheme.background.primary}
-        linkColor={() => currentTheme.text.primary}
-        linkWidth={(link: any) => (link.count ? Math.sqrt(link.count) : 1)}
+    const colorMap = useMemo(() => {
+        const map = new Map<string, string>();
+        nodes.forEach((n, index) => {
+            // pick a color based on index or hash it
+            const color = new THREE.Color().setHSL((index / nodes.length) % 1, 0.6, 0.5).getStyle();
+            map.set(n.id, color);
+        });
+        return map;
+    }, [nodes]);
 
-        nodeCanvasObject={(node: any, ctx, globalScale) => {
-          const label = node.id;
-          const fontSize = 14 / globalScale;
-          const size = 5;
+    return (
+        <div style={{ width: "100%", height: "600px" }}>
+            <ForceGraph3D
+                graphData={{ nodes, links }}
 
-          // Draw circle with color from colorMap
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
-          ctx.fillStyle = colorMap.get(node.id) ?? currentTheme.accent.primary;
-          ctx.fill();
+                backgroundColor={theme.background.primary}
+                linkColor={() => theme.text.primary}
+                linkWidth={(link: any) => Math.max(1, Math.sqrt(link.count))}
 
-          // Draw the text label
-          ctx.font = `${fontSize}px Sans-Serif`;
-          ctx.textAlign = "center";
-          ctx.textBaseline = "middle";
-          ctx.fillStyle = currentTheme.text.primary;
-          ctx.fillText(label, node.x, node.y + size + fontSize * 0.5);
-        }}
-        nodeCanvasObjectMode={() => "replace"}
-      />
-    </div>
-  );
+                nodeThreeObject={(node: any) => {
+                    const color = colorMap.get(node.id) ?? theme.accent.primary;
+
+                    // Sphere for the node
+                    const sphere = new THREE.Mesh(
+                        new THREE.SphereGeometry(6, 12, 12),
+                        new THREE.MeshBasicMaterial({ color })
+                    );
+
+                    // Text label
+                    const canvas = document.createElement("canvas");
+                    const ctx = canvas.getContext("2d")!;
+                    ctx.font = "48px Sans-Serif";
+                    const textWidth = ctx.measureText(node.id).width;
+                    canvas.width = textWidth + 20;
+                    canvas.height = 64;
+
+                    ctx.font = "48px Sans-Serif";
+                    ctx.fillStyle = theme.text.primary;
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    ctx.fillText(node.id, canvas.width / 2, canvas.height / 2);
+
+                    const sprite = new THREE.Sprite(
+                        new THREE.SpriteMaterial({
+                            map: new THREE.CanvasTexture(canvas),
+                            depthTest: false,
+                        })
+                    );
+                    sprite.scale.set(canvas.width / 8, canvas.height / 8, 1);
+                    sprite.position.set(0, 10, 0);
+
+                    const group = new THREE.Group();
+                    group.add(sphere);
+                    group.add(sprite);
+
+                    return group;
+                }}
+            />
+        </div>
+    );
 }
