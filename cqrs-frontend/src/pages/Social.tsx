@@ -32,14 +32,15 @@ export default function SocialGraph3D() {
 
     return (
         <div style={{ width: "100%", height: "600px" }}>
-            <ForceGraph3D
+            <ForceGraph3D<Node, Link>
                 graphData={{ nodes, links }}
 
                 backgroundColor={theme.background.primary}
                 linkColor={() => theme.text.primary}
-                linkWidth={(link: any) => Math.max(1, Math.sqrt(link.count))}
+                linkOpacity={0.9}
+                linkWidth={(link: Link) => Math.max(1, Math.sqrt(link.count))}
 
-                nodeThreeObject={(node: any) => {
+                nodeThreeObject={(node: Node) => {
                     const color = colorMap.get(node.id) ?? theme.accent.primary;
 
                     // Sphere for the node
