@@ -3,8 +3,8 @@ import { useSocialWeb } from '../hooks';
 import { useTheme } from '../contexts/ThemeContext';
 import { lightTheme, darkTheme } from '../styles/theme';
 import ForceGraph3D from 'react-force-graph-3d';
-import * as THREE from 'three';
-import { useMemo } from 'react';
+import * as THREE from 'three'
+import { useMemo, useRef } from 'react';
 
 export type Node = { id: string };
 export type Link = { source: string; target: string, count: number };
@@ -30,9 +30,28 @@ export default function SocialGraph3D() {
         return map;
     }, [nodes]);
 
+    const fgRef = useRef<any>(null);
     return (
         <div style={{ width: "100%", height: "600px" }}>
             <ForceGraph3D<Node, Link>
+                ref={fgRef}
+
+                onNodeClick={(node) => {
+                    const distance = 80; // how close the camera gets
+                    const distRatio =
+                        1 + distance / Math.hypot(node.x!, node.y!, node.z!);
+
+                    fgRef.current?.cameraPosition(
+                        {
+                            x: node.x! * distRatio,
+                            y: node.y! * distRatio,
+                            z: node.z! * distRatio,
+                        },
+                        node, // lookAt
+                        800   // ms transition
+                    );
+                }}
+
                 graphData={{ nodes, links }}
 
                 backgroundColor={theme.background.primary}
