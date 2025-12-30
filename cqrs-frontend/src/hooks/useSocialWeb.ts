@@ -12,26 +12,35 @@ export function useSocialWeb(conversations: Conversation[]): SocialWeb {
     const nodeSet = new Set<string>();
     const linkMap = new Map<string, number>();
 
+    // Helper to handle corrupt/joined strings
+    const splitNames = (name: string): string[] => {
+      return name.split(/ en | & |,/i).map(n => n.trim()).filter(n => n.length > 0);
+    };
+
     conversations.forEach((convo) => {
-        // Collect all participants in the conversation
-        const participants = new Set<string>();
-        convo.lines.forEach(line => line.participants.forEach(p => participants.add(p.name)));
+      const participants = new Set<string>();
 
-        // Add all participants to the node set
-        participants.forEach(name => nodeSet.add(name));
-
-        const participantsArray = Array.from(participants);
-        // Create a link for every pair of participants in the conversation
-        for (let i = 0; i < participantsArray.length; i++) {
-            for (let j = i + 1; j < participantsArray.length; j++) {
-            const [a, b] = [participantsArray[i], participantsArray[j]].sort();
-            const key = `${a}->${b}`;
-            linkMap.set(key, (linkMap.get(key) ?? 0) + 1);
-            }
-        }
+      convo.lines.forEach(line => {
+        line.participants.forEach(p => {
+          const individualNames = splitNames(p.name);
+          individualNames.forEach(name => participants.add(name));
         });
+      });
 
-    
+      participants.forEach(name => nodeSet.add(name));
+
+      const participantsArray = Array.from(participants);
+      
+      // Create a link for every pair of participants
+      for (let i = 0; i < participantsArray.length; i++) {
+        for (let j = i + 1; j < participantsArray.length; j++) {
+          const [a, b] = [participantsArray[i], participantsArray[j]].sort();
+          const key = `${a}->${b}`;
+          linkMap.set(key, (linkMap.get(key) ?? 0) + 1);
+        }
+      }
+    });
+
     const nodes: Node[] = Array.from(nodeSet).map(name => ({ id: name }));
 
     const links: Link[] = Array.from(linkMap.entries()).map(([key, count]) => {
