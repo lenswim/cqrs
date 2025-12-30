@@ -51,6 +51,7 @@ export function Sidebar() {
     { icon: '✨', label: 'Add Quote', path: '/newQuote' },
     { icon: '📊', label: 'Statistics', path: '/statistics' },
     { icon: '📑', label: 'Docs', path: 'https://lenswim.github.io/cqrs/' },
+    { icon: '🕸️', label: 'Social Web', path: '/social' },
   ];
 
   return (

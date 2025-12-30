@@ -1,7 +1,25 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { z } from "https://deno.land/x/zod/mod.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-import conversationSchema from "./schemas/conversationSchema.ts";
+
+const participantSchema = z.object({
+  name: z.string().min(1, "Name is required"),
+  victim: z.boolean().optional(),
+});
+
+const lineSchema = z.object({
+  text: z.string().min(1, "Text is required"),
+  lineType: z.enum(["CONTEXT", "SPEECH"]),
+  punchLine: z.boolean().optional(),
+  participants: z.array(participantSchema).min(1),
+});
+
+const conversationSchema = z.object({
+  id: z.string().uuid(),
+  lines: z.array(lineSchema),
+  createdOn: z.string(),
+  conversationDate: z.string().min(1),
+});
 
 // Setup CORS headers
 const corsHeaders = {
