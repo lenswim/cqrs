@@ -3,22 +3,31 @@ import { z } from "https://deno.land/x/zod/mod.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const participantSchema = z.object({
-  name: z.string().min(1, "Name is required"),
+  name: z.string().nonempty("participant name is required"),
   victim: z.boolean().optional(),
 });
 
-const lineSchema = z.object({
-  text: z.string().min(1, "Text is required"),
-  lineType: z.enum(["CONTEXT", "SPEECH"]),
-  punchLine: z.boolean().optional(),
-  participants: z.array(participantSchema).min(1),
-});
+const lineSchema = z.discriminatedUnion("lineType", [
+  z.object({
+    lineType: z.literal("CONTEXT"),
+    text: z.string().nonempty("line text is required"),
+    punchLine: z.boolean().optional(),
+    participants: z.array(participantSchema).max(0).optional(),
+  }),
+  
+  z.object({
+    lineType: z.literal("SPEECH"),
+    text: z.string().nonempty("line text is required"),
+    punchLine: z.boolean().optional(),
+    participants: z.array(participantSchema).min(1, "line must have at least one participant")
+  })
+]);
 
 const conversationSchema = z.object({
-  id: z.string().uuid(),
+  id: z.uuid(),
   lines: z.array(lineSchema),
   createdOn: z.string(),
-  conversationDate: z.string().min(1),
+  conversationDate: z.string().nonempty("conversation date is required")
 });
 
 // Setup CORS headers
@@ -33,14 +42,6 @@ serve(async (req) => {
   }
 
   try {
-    
-    const secret = req.headers.get("x-app-secret");
-    if (secret !== Deno.env.get("FUNCTION_SECRET")) {
-      return new Response(JSON.stringify({ error: "Unauthorized" }), { 
-        status: 401, 
-        headers: { ...corsHeaders, "Content-Type": "application/json" } 
-      });
-    }
 
     const body = await req.json();
 

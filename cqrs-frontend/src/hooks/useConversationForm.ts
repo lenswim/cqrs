@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { LineType, Participant } from "../types/types";
-import { URL, FUNCTION_SECRET } from "../util/supabase";
+import { URL, FUNCTION_SECRET, ANON } from "../util/supabase";
 import conversationSchema from "../schemas/conversationSchema";
 
 export interface LineData {
@@ -63,6 +63,7 @@ export function useConversationForm(onSuccess?: () => void, onFailure?: (message
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "Authorization": `Bearer ${ANON}`,
             "x-app-secret": FUNCTION_SECRET,
           },
           body: JSON.stringify(conversationData),
