@@ -10,7 +10,7 @@ const lineSchema = z.discriminatedUnion("lineType", [
     lineType: z.literal("CONTEXT"),
     text: z.string().nonempty("line text is required"),
     punchLine: z.boolean().optional(),
-    participants: z.array(participantSchema).max(0).optional(),
+    participants: z.array(participantSchema).max(0, "context lines cannot have participants")
   }),
   
   z.object({

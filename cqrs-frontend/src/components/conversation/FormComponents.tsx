@@ -249,13 +249,15 @@ export function LineEditor({ lines, onLineChange }: LineEditorProps) {
             </Select.Root>
           </Field.Root>
 
-          {/* Participants */}
-          <Box mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
-            <ParticipantEditor
-              participants={line.participants}
-              onParticipantsChange={(participants) => onLineChange(index, "participants", participants)}
-            />
-          </Box>
+          {/* Participants (only for speech lines) */}
+          {line.lineType === "SPEECH" && (
+            <Box mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
+              <ParticipantEditor
+                participants={line.participants}
+                onParticipantsChange={(participants) => onLineChange(index, "participants", participants)}
+              />
+            </Box>
+          )}
 
           {/* Text Field */}
           <Field.Root id={`line-text-${index}`} mb={{ base: responsiveSpacing.mobile, md: responsiveSpacing.tablet }}>
