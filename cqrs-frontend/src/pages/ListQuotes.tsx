@@ -154,6 +154,9 @@ export default function ListQuotes() {
         toggleParticipantFilter,
         toggleYearFilter,
         clearFilters,
+        toggleLike,
+        likedIds,
+        pendingLikeIds,
     } = useConversationList();
 
     const hasActiveFilters = selectedParticipants.length > 0 || selectedYears.length > 0;
@@ -268,6 +271,9 @@ export default function ListQuotes() {
                                     <ConversationCard
                                         key={conversation.id}
                                         conversation={conversation}
+                                        liked={likedIds.has(conversation.id)}
+                                        pendingLike={pendingLikeIds.has(conversation.id)}
+                                        onToggleLike={toggleLike}
                                     />
                                 ))}
                             </VStack>

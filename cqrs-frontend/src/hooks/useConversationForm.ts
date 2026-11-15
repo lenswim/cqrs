@@ -37,6 +37,7 @@ export function useConversationForm(onSuccess?: () => void, onFailure?: (message
       id: crypto.randomUUID(),
       conversationDate: conversationDate || "",
       createdOn: new Date().toISOString(),
+      likes: 0,
       lines: lines.map(l => ({
         text: l.text,
         lineType: l.lineType,

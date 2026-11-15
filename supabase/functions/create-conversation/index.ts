@@ -27,7 +27,8 @@ const conversationSchema = z.object({
   id: z.uuid(),
   lines: z.array(lineSchema),
   createdOn: z.string(),
-  conversationDate: z.string().nonempty("conversation date is required")
+  conversationDate: z.string().nonempty("conversation date is required"),
+  likes: z.number().int().nonnegative().default(0)
 });
 
 // Setup CORS headers

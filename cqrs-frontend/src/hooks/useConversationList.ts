@@ -7,7 +7,73 @@ export function useConversationList() {
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [selectedParticipants, setSelectedParticipants] = useState<string[]>([]);
   const [selectedYears, setSelectedYears] = useState<number[]>([]);
-  
+  const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
+  const [pendingLikeIds, setPendingLikeIds] = useState<Set<string>>(new Set());
+
+  const toggleLike = async (conversationId: string) => {
+    setPendingLikeIds((prev) => new Set(prev).add(conversationId));
+
+    const target = conversations.find((conversation) => conversation.id === conversationId);
+    if (!target) {
+      setPendingLikeIds((prev) => {
+        const next = new Set(prev);
+        next.delete(conversationId);
+        return next;
+      });
+      return;
+    }
+
+    const previouslyLiked = likedIds.has(conversationId);
+    const nextLiked = !previouslyLiked;
+    const currentLikes = Number(target.likes ?? 0);
+    const nextLikes = Math.max(0, nextLiked ? currentLikes + 1 : currentLikes - 1);
+
+    setLikedIds((prev) => {
+      const next = new Set(prev);
+      if (nextLiked) next.add(conversationId);
+      else next.delete(conversationId);
+      return next;
+    });
+
+    setConversations((prev) =>
+      prev.map((conversation) =>
+        conversation.id === conversationId
+          ? { ...conversation, likes: nextLikes }
+          : conversation
+      )
+    );
+
+    try {
+      const { error } = await supabase
+        .from("conversations")
+        .update({ conversation: { ...target, likes: nextLikes } })
+        .eq("conversation->>id", conversationId);
+
+      if (error) {
+        throw error;
+      }
+    } catch (error) {
+      setLikedIds((prev) => {
+        const next = new Set(prev);
+        if (previouslyLiked) next.add(conversationId);
+        else next.delete(conversationId);
+        return next;
+      });
+      setConversations((prev) =>
+        prev.map((conversation) =>
+          conversation.id === conversationId
+            ? { ...conversation, likes: currentLikes }
+            : conversation
+        )
+      );
+    } finally {
+      setPendingLikeIds((prev) => {
+        const next = new Set(prev);
+        next.delete(conversationId);
+        return next;
+      });
+    }
+  };
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -32,6 +98,7 @@ export function useConversationList() {
         const convo = item.conversation;
         return {
           ...convo,
+          likes: Number(convo.likes ?? 0),
           lines: typeof convo.lines === 'string' ? JSON.parse(convo.lines) : convo.lines
         };
       });
@@ -138,5 +205,8 @@ export function useConversationList() {
     allPunchlines,
     loading,
     error,
+    toggleLike,
+    likedIds,
+    pendingLikeIds,
   };
 }

@@ -14,8 +14,10 @@ export interface Line {
 
 export interface Conversation {
     id: string;
+    dbId?: string;
     conversationDate: string; // ISO date string
     createdOn: string;        // ISO datetime string
+    likes: number;
     lines: Line[];
 }
 
