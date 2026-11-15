@@ -11,6 +11,10 @@ export function useConversationList() {
   const [pendingLikeIds, setPendingLikeIds] = useState<Set<string>>(new Set());
 
   const toggleLike = async (conversationId: string) => {
+    if (pendingLikeIds.has(conversationId)) {
+      return;
+    }
+
     setPendingLikeIds((prev) => new Set(prev).add(conversationId));
 
     const target = conversations.find((conversation) => conversation.id === conversationId);
@@ -82,6 +86,7 @@ export function useConversationList() {
     let mounted = true;
 
     const fetchAll = async () => {
+      setError(null);
       const { data, error } = await supabase
         .from("conversations")
         .select("*")
@@ -91,11 +96,12 @@ export function useConversationList() {
       if (!mounted) return;
       if (error) {
         setError(error.message);
-        return
+        setLoading(false);
+        return;
       }
 
-      const normalized = (data ?? []).map(item => {
-        const convo = item.conversation;
+      const normalized = (data ?? []).map((item) => {
+        const convo = item.conversation ?? item;
         return {
           ...convo,
           likes: Number(convo.likes ?? 0),
