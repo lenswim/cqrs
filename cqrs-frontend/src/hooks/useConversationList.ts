@@ -2,13 +2,29 @@ import { useState, useEffect } from "react";
 import type {Conversation, Punchline} from "../types/types";
 import { supabase } from "../util/supabase";
 
+const LIKED_CONVERSATIONS_KEY = "cqrs-liked-conversations";
+
+function readPersistedLikedIds(): Set<string> {
+  try {
+    const raw = localStorage.getItem(LIKED_CONVERSATIONS_KEY);
+    if (!raw) return new Set();
+    const parsed = JSON.parse(raw);
+    return new Set(Array.isArray(parsed) ? parsed.filter((id): id is string => typeof id === "string") : []);
+  } catch {
+    return new Set();
+  }
+}
 
 export function useConversationList() {
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [selectedParticipants, setSelectedParticipants] = useState<string[]>([]);
   const [selectedYears, setSelectedYears] = useState<number[]>([]);
-  const [likedIds, setLikedIds] = useState<Set<string>>(new Set());
+  const [likedIds, setLikedIds] = useState<Set<string>>(readPersistedLikedIds);
   const [pendingLikeIds, setPendingLikeIds] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    localStorage.setItem(LIKED_CONVERSATIONS_KEY, JSON.stringify([...likedIds]));
+  }, [likedIds]);
 
   const toggleLike = async (conversationId: string) => {
     if (pendingLikeIds.has(conversationId)) {
@@ -48,9 +64,20 @@ export function useConversationList() {
     );
 
     try {
+      const { data: row, error: rowError } = await supabase
+        .from("conversations")
+        .select("conversation")
+        .eq("conversation->>id", conversationId)
+        .maybeSingle();
+
+      if (rowError) {
+        throw rowError;
+      }
+
+      const persistedConversation = row?.conversation ?? target;
       const { error } = await supabase
         .from("conversations")
-        .update({ conversation: { ...target, likes: nextLikes } })
+        .update({ conversation: { ...persistedConversation, likes: nextLikes } })
         .eq("conversation->>id", conversationId);
 
       if (error) {
@@ -109,8 +136,17 @@ export function useConversationList() {
         };
       });
 
-      console.log("Fetched conversations:", data);
       setConversations(normalized);
+      setLikedIds(() => {
+        const persisted = readPersistedLikedIds();
+        const next = new Set<string>();
+        normalized.forEach((conversation) => {
+          if (persisted.has(conversation.id)) {
+            next.add(conversation.id);
+          }
+        });
+        return next;
+      });
       setLoading(false);
     };
 
@@ -122,7 +158,6 @@ export function useConversationList() {
         "postgres_changes",
         { event: "*", schema: "public", table: "conversations" },
         async () => {
-          // guard and set loading from an external callback (allowed)
           if (!mounted) return;
           setLoading(true);
           await fetchAll();
@@ -164,7 +199,7 @@ export function useConversationList() {
         new Date(convo.conversationDate).getFullYear()
       )
     )
-  ).sort((a, b) => b - a); // Sort years descending (newest first)
+  ).sort((a, b) => b - a);
 
   const filteredConversations = conversations.filter(convo => {
     const participantMatch = selectedParticipants.length === 0 ||
